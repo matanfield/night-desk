@@ -1,0 +1,2780 @@
+[
+  {
+    "slug": "hotel-miradouro-azul",
+    "name": "Hotel Miradouro Azul",
+    "archetype": "romantic boutique hotel in a restored 18th-century townhouse",
+    "neighborhood": "Alfama",
+    "address": "Rua de São Miguel 47, 1100-544 Lisboa, Portugal",
+    "stars": 4,
+    "short_description": "An 18-room romantic hideaway in a restored 18th-century Alfama townhouse, with a rooftop miradouro terrace overlooking the Tagus and breakfast under original 1780s azulejos.",
+    "long_description": "Hotel Miradouro Azul occupies a carefully restored 1780s townhouse on Rua de São Miguel, in the heart of Alfama and three minutes on foot from the Miradouro de Santa Luzia. Its eighteen rooms keep the bones of the old house — timber beams, wrought-iron balconies, hand-painted azulejo panels — while adding quiet air conditioning, fine linens and proper rain showers. The rooftop miradouro terrace looks straight down over terracotta rooftops to the Tagus, and every evening from 18:00 to 19:00 the hotel pours a complimentary glass of port as the river turns gold. Breakfast with house-baked pastéis de nata is included with every rate, and the front desk gladly books fado tables in the lanes below.",
+    "occupancy_profile": "available",
+    "policies": {
+      "check_in_from": "15:00",
+      "check_in_until": "23:00 at the staffed desk; arrivals after 23:00 follow the night-arrival procedure",
+      "check_out_until": "11:00",
+      "cancellation": "Free cancellation until 15:00 (Lisbon time) on the arrival day; after that, or for no-shows, the first night is charged to the card on file.",
+      "pets": "Small dogs up to 8 kg welcome, one per room, 15 EUR per night; pets may not enter the breakfast room but are welcome on the rooftop terrace.",
+      "smoking": "Non-smoking throughout the building; smoking is permitted only on the rooftop miradouro terrace. A 150 EUR deep-cleaning fee applies if a room is smoked in.",
+      "payment_methods": "Visa, Mastercard and American Express, Apple Pay and Google Pay, and cash in euros; a valid card is required to guarantee every booking.",
+      "late_arrival_notes": "The desk is staffed until midnight. Between 00:00 and 06:00 the hotel's AI night receptionist handles arrivals: once the booking is confirmed and a card is on file, it sends an SMS with a one-time code for the blue street door at Rua de São Miguel 47 and a second code for the key cabinet beside reception, where the room key and a welcome note wait. An on-call duty manager lives ten minutes away and can be reached through the same phone line at any hour."
+    },
+    "amenities": [
+      "Rooftop miradouro terrace with Tagus views",
+      "Complimentary port wine hour daily 18:00-19:00",
+      "Breakfast included, served under original 1780s azulejos",
+      "Free fiber Wi-Fi (about 300 Mbps) throughout",
+      "Individually controlled air conditioning in all rooms",
+      "Honesty bar with Portuguese wines",
+      "Laptop-sized in-room safes",
+      "Free luggage storage on arrival and departure days",
+      "Same-day laundry service (weekdays)",
+      "Concierge bookings for fado houses and restaurants",
+      "Nespresso machine and kettle in every room"
+    ],
+    "persona": {
+      "style": "warm, unhurried, gently proud, attentive",
+      "greeting": "Good evening, you've reached Hotel Miradouro Azul in Alfama — I'm the hotel's AI night receptionist, and I have all the time in the world for you, how may I help?",
+      "speech_quirks": "Speaks slowly and never rushes a caller, often saying 'take your time' and 'no hurry at all'. Slips in a fond mention of the rooftop terrace and its view over the Tagus whenever it fits naturally, as if showing off a family treasure.",
+      "escalation_line": "Ah, that one is beyond what I can arrange tonight — let me write a careful note for our morning team, and someone will call you back soon after 08:00, if that suits you."
+    },
+    "room_types": [
+      {
+        "code": "classic_double",
+        "name": "Classic Double",
+        "description": "A cosy double facing the quiet inner courtyard, with timber beams, a queen bed and a marble rain shower. The snuggest and quietest rooms in the house.",
+        "capacity": 2,
+        "base_rate_eur": 145,
+        "total_units": 8,
+        "features": [
+          "Queen bed",
+          "Courtyard view (quietest rooms)",
+          "Rain shower",
+          "Air conditioning",
+          "Nespresso machine and kettle",
+          "Laptop-sized safe"
+        ]
+      },
+      {
+        "code": "azulejo_deluxe",
+        "name": "Azulejo Deluxe",
+        "description": "A larger street-side room with a restored hand-painted azulejo panel, a wrought-iron Juliet balcony over Rua de São Miguel and glimpses of the Tagus between the rooftops.",
+        "capacity": 2,
+        "base_rate_eur": 175,
+        "total_units": 6,
+        "features": [
+          "King bed",
+          "Original 1780s azulejo panel",
+          "Juliet balcony with river glimpse",
+          "Rain shower and bathtub",
+          "Air conditioning",
+          "Nespresso machine",
+          "Laptop-sized safe"
+        ]
+      },
+      {
+        "code": "miradouro_suite",
+        "name": "Miradouro Suite",
+        "description": "The top-floor suite with a separate sitting area and a private 12 m2 terrace looking over Alfama's rooftops to the river — the room the hotel is named for. Sleeps up to three with an extra bed.",
+        "capacity": 3,
+        "base_rate_eur": 215,
+        "total_units": 4,
+        "features": [
+          "King bed plus optional extra bed",
+          "Private terrace with full Tagus view",
+          "Separate sitting area",
+          "Bathtub and rain shower",
+          "Air conditioning",
+          "Nespresso machine",
+          "Bathrobes and slippers",
+          "Laptop-sized safe"
+        ]
+      }
+    ],
+    "facts": [
+      {
+        "topic": "check_in",
+        "question": "What time can I check in?",
+        "answer": "Check-in starts at 15:00 and the desk is staffed until midnight. If you arrive earlier you can leave your bags with us for free and explore Alfama until your room is ready."
+      },
+      {
+        "topic": "check_out",
+        "question": "When do I need to check out?",
+        "answer": "Check-out is by 11:00. Late check-out until 13:00 costs 25 EUR and depends on availability — just ask the evening before."
+      },
+      {
+        "topic": "late_arrival",
+        "question": "I'll arrive around 2 AM — is that a problem?",
+        "answer": "Not at all — between midnight and 06:00 our AI night receptionist confirms your booking and sends an SMS with a one-time code for the blue street door at Rua de São Miguel 47 plus a code for the key cabinet beside reception, where your room key and a welcome note will be waiting. A duty manager is on call ten minutes away if anything goes wrong."
+      },
+      {
+        "topic": "early_check_in",
+        "question": "Can I check in before 15:00?",
+        "answer": "If a room is free we'll happily check you in early at no charge; a guaranteed early check-in from 11:00 can be booked the day before for 30 EUR. Either way, luggage storage is free from the moment you arrive."
+      },
+      {
+        "topic": "parking",
+        "question": "Do you have parking?",
+        "answer": "We have no parking — Alfama's lanes are too narrow for cars. The nearest garage is the public car park at Campo das Cebolas, about a 10-minute walk, around 25 EUR per 24 hours; taxis can drop you at Largo do Chafariz de Dentro, 3 minutes from our door."
+      },
+      {
+        "topic": "breakfast",
+        "question": "Is breakfast included?",
+        "answer": "Yes, breakfast is included with every rate and served from 08:00 to 10:30 in the azulejo breakfast room. We bake our own pastéis de nata each morning, and there are eggs, cheeses, fruit and proper coffee."
+      },
+      {
+        "topic": "pets",
+        "question": "Can I bring my dog?",
+        "answer": "Small dogs up to 8 kg are welcome, one per room, for 15 EUR per night. Dogs can't join you in the breakfast room, but they are very welcome on the rooftop terrace."
+      },
+      {
+        "topic": "wifi",
+        "question": "Is there Wi-Fi?",
+        "answer": "Yes, free fiber Wi-Fi runs throughout the building at around 300 Mbps, including on the rooftop terrace. The network name and password are on your key card sleeve."
+      },
+      {
+        "topic": "accessibility",
+        "question": "Is the hotel wheelchair accessible?",
+        "answer": "Honestly, no — the house dates from the 1780s and has no lift, so all rooms are reached by stairs. The most accessible option is a Classic Double one flight up; we're glad to help with bags, but the building isn't suitable for wheelchair users."
+      },
+      {
+        "topic": "payment",
+        "question": "What payment methods do you accept?",
+        "answer": "We take Visa, Mastercard, American Express, Apple Pay, Google Pay and cash in euros. A valid card is needed to guarantee any booking, including ones made by phone at night."
+      },
+      {
+        "topic": "cancellation",
+        "question": "What is your cancellation policy?",
+        "answer": "You can cancel free of charge until 15:00 Lisbon time on your arrival day. After that, or if you don't show up, we charge the first night to the card on file."
+      },
+      {
+        "topic": "airport_transport",
+        "question": "How do I get there from the airport?",
+        "answer": "A taxi or Uber from Lisbon Airport takes about 20 minutes and costs 15-20 EUR — ask for Largo do Chafariz de Dentro, then it's a 3-minute walk. We can also arrange a private transfer for 35 EUR, or take the metro to Santa Apolónia (one change, about 35 minutes, 1.85 EUR) and walk 8 minutes uphill."
+      },
+      {
+        "topic": "luggage_storage",
+        "question": "Can you store our luggage?",
+        "answer": "Yes, we store luggage free of charge in a locked room beside reception on your arrival and departure days. Many guests leave bags after the 11:00 check-out and enjoy Alfama until an evening flight."
+      },
+      {
+        "topic": "smoking",
+        "question": "Can I smoke in the room?",
+        "answer": "The whole building is non-smoking; smoking in a room carries a 150 EUR deep-cleaning fee. You're welcome to smoke on the rooftop miradouro terrace, which frankly is a much nicer spot anyway."
+      },
+      {
+        "topic": "children_extra_bed",
+        "question": "Do you accept children, and can we get an extra bed?",
+        "answer": "Children are very welcome. A cot for under-2s is free in any room, and a proper extra bed fits only in the Miradouro Suite for 30 EUR per night."
+      },
+      {
+        "topic": "air_conditioning",
+        "question": "Do the rooms have air conditioning?",
+        "answer": "Yes, every room has individually controlled air conditioning, fitted discreetly so it doesn't spoil the old house. August evenings on the terrace are lovely, but your room will be cool when you come down."
+      },
+      {
+        "topic": "pool_gym_spa",
+        "question": "Is there a pool, gym or spa?",
+        "answer": "No pool, gym or spa, I'm afraid — the house is too small and too old for that. What we offer instead is the rooftop terrace with its view over the Tagus, an honesty bar, and a free glass of port every evening between 18:00 and 19:00."
+      },
+      {
+        "topic": "neighborhood",
+        "question": "What's around the hotel?",
+        "answer": "We're in the heart of Alfama: the Miradouro de Santa Luzia viewpoint is 3 minutes on foot, the Fado Museum 5 minutes, and São Jorge Castle about 10 minutes uphill. The famous tram 28 stops 2 minutes away at Largo das Portas do Sol."
+      },
+      {
+        "topic": "noise",
+        "question": "Is the area noisy at night?",
+        "answer": "Rua de São Miguel is calm by Lisbon standards — the nearby fado houses wind down around 23:00, and you may hear the tram 28 bell starting around 06:30. Courtyard-facing Classic Doubles are the quietest rooms, and we keep complimentary earplugs at reception just in case."
+      },
+      {
+        "topic": "room_safe",
+        "question": "Is there a safe in the room?",
+        "answer": "Yes, every room has a laptop-sized electronic safe in the wardrobe, free to use."
+      },
+      {
+        "topic": "laundry",
+        "question": "Do you offer laundry service?",
+        "answer": "Yes — leave items at reception by 09:00 on a weekday and they're back by 19:00 the same day. Pricing is per item, for example 4.50 EUR for a shirt; there's no service on Sundays."
+      },
+      {
+        "topic": "taxes_fees",
+        "question": "Are there any taxes on top of the room rate?",
+        "answer": "Lisbon charges a city tourist tax of 4 EUR per person per night, capped at 7 nights, paid at the hotel; children under 13 are exempt. VAT is already included in all quoted rates."
+      },
+      {
+        "topic": "port_wine_hour",
+        "question": "I heard you serve free port wine — is that true?",
+        "answer": "It is — every evening from 18:00 to 19:00 we pour a complimentary glass of port on the rooftop miradouro terrace while the sun sets over the Tagus. It's the hotel's little ritual, and most guests don't miss it twice."
+      },
+      {
+        "topic": "building_history",
+        "question": "How old is the building?",
+        "answer": "The townhouse was built in the 1780s, during the rebuilding of Lisbon after the great earthquake, and we restored it over two years. The blue azulejo panels in the stairwell and the breakfast room are original — that blue gave the hotel its name."
+      },
+      {
+        "topic": "fado_booking",
+        "question": "Can you book a fado evening for us?",
+        "answer": "With pleasure — the front desk reserves tables at the small fado houses in the lanes around us, usually for shows starting at 20:00 or 21:30. Tell us a day ahead if you can; expect around 30-50 EUR per person with dinner."
+      }
+    ]
+  },
+  {
+    "slug": "pensao-estrela-do-tejo",
+    "name": "Pensão Estrela do Tejo",
+    "archetype": "family-run budget guesthouse, third generation",
+    "neighborhood": "Baixa",
+    "address": "Rua dos Douradores 87, 2.º andar, 1100-205 Lisboa, Portugal",
+    "stars": 2,
+    "short_description": "A 12-room family guesthouse on the second and third floors of an 18th-century Baixa building, run by the same family since 1952. Simple, spotless rooms, homemade jams at breakfast, and the river five minutes' walk away.",
+    "long_description": "Pensão Estrela do Tejo has been welcoming travellers to Rua dos Douradores since 1952, when Grandmother Estrela first hung the brass sign by the street door. Today her granddaughter Dona Amália runs the house the same way: twelve simple rooms across two floors of a tiled 18th-century Pombaline building, fresh bread carried up from the bakery downstairs every morning, and a handwritten list of neighbourhood tascas pressed into the hand of anyone who asks where to eat. Rooms are modest but immaculate — some with private bathrooms and air conditioning, others sharing a bathroom on the corridor in the old pensão tradition — and the azulejo-tiled breakfast room still has Estrela's portrait on the wall. There is no lift and there are 38 stairs, but in exchange you sleep in the very centre of Baixa: Praça do Comércio and the Tagus are five minutes on foot, Rossio station four, and the Santa Justa lift three. Reception is staffed by the family from 08:00 to 23:00; overnight, an AI receptionist answers the phone and handles late arrivals with door codes sent by SMS.",
+    "occupancy_profile": "sold_out_tonight",
+    "policies": {
+      "check_in_from": "14:00",
+      "check_in_until": "23:00 at the staffed desk; self check-in with door codes after 23:00",
+      "check_out_until": "11:00",
+      "cancellation": "Free cancellation until 18:00 (Lisbon time) on the day before arrival; after that the first night is charged. No-shows are charged the first night only.",
+      "pets": "Small dogs up to 8 kg are welcome free of charge by prior arrangement, in the ensuite double and family rooms only.",
+      "smoking": "Non-smoking throughout the house; a 60 EUR deep-cleaning fee applies if a room smells of smoke. Guests smoke in the street outside.",
+      "payment_methods": "Cash (EUR), Visa, Mastercard and Maestro debit. No American Express. Night arrivals prepay the first night by secure card link sent via SMS.",
+      "late_arrival_notes": "Reception is staffed by the family from 08:00 to 23:00. Between 23:00 and 06:00 the AI night receptionist handles arrivals: once the first night is paid via the card link sent by SMS, it sends two codes — the street-door code for Rua dos Douradores 87 and the key-safe code for the box beside the 2nd-floor reception desk. Room keys wait inside the key safe; Dona Amália greets late arrivals personally at breakfast."
+    },
+    "amenities": [
+      "Free Wi-Fi throughout",
+      "Continental breakfast included (08:00-10:30)",
+      "Azulejo-tiled breakfast room",
+      "Free luggage storage on arrival and departure days",
+      "In-room safes",
+      "Daily housekeeping",
+      "Wash-and-fold laundry service (12 EUR per load)",
+      "Air conditioning in ensuite rooms; ceiling fans in shared-bath rooms",
+      "Tea and coffee corner at reception",
+      "Handwritten neighbourhood restaurant list (the 'lista da Amália')",
+      "Free earplugs and city maps at reception",
+      "Baby cots free of charge; folding extra beds 15 EUR"
+    ],
+    "persona": {
+      "style": "warm, apologetic, motherly, chatty",
+      "greeting": "Good evening, my dear — you've reached Pensão Estrela do Tejo in Baixa, and I'm the family's AI night receptionist; how can I help you?",
+      "speech_quirks": "Speaks gently and unhurriedly, calls callers 'dear' or 'my dear', and apologises warmly and often — 'I'm so sorry, dear, truly.' Fusses over callers' wellbeing (asks if they've eaten, warns about the steep stairs and cobbles) and cannot resist recommending Baixa and the family's favourite tascas even when she has no room to offer.",
+      "escalation_line": "I'm so sorry, my dear, that's something only the family can sort out — let me take your name and number, and Dona Amália will ring you back first thing in the morning, just after eight."
+    },
+    "room_types": [
+      {
+        "code": "single_shared_bath",
+        "name": "Single Room (shared bathroom)",
+        "description": "A snug single on the 2nd floor in the old pensão tradition: washbasin in the room, crisp linens, and a shared bathroom two doors down the corridor that is cleaned three times a day.",
+        "capacity": 1,
+        "base_rate_eur": 55,
+        "total_units": 3,
+        "features": [
+          "single bed",
+          "washbasin in room",
+          "shared bathroom on the corridor",
+          "ceiling fan",
+          "in-room safe",
+          "writing desk"
+        ]
+      },
+      {
+        "code": "twin_shared_bath",
+        "name": "Twin Room (shared bathroom)",
+        "description": "Two single beds, tall shuttered windows and a washbasin in the room; the shared bathroom is on the same corridor. Back-facing units look onto a quiet inner courtyard.",
+        "capacity": 2,
+        "base_rate_eur": 65,
+        "total_units": 3,
+        "features": [
+          "two single beds",
+          "washbasin in room",
+          "shared bathroom on the corridor",
+          "ceiling fan",
+          "in-room safe",
+          "courtyard-facing options"
+        ]
+      },
+      {
+        "code": "double_ensuite",
+        "name": "Double Room with private bathroom",
+        "description": "The house's most requested room: a double bed, a compact private bathroom with shower, quiet wall air conditioning and, on the street side, a Juliet balcony over Rua dos Douradores.",
+        "capacity": 2,
+        "base_rate_eur": 75,
+        "total_units": 4,
+        "features": [
+          "double bed",
+          "private bathroom with shower",
+          "wall air-conditioning unit",
+          "in-room safe",
+          "hairdryer",
+          "Juliet balcony on street side"
+        ]
+      },
+      {
+        "code": "family_room",
+        "name": "Family Room",
+        "description": "The big corner room on the 3rd floor with a double bed and two singles, a private bathroom and — if you lean by the window — a glimpse of the Tagus between the rooftops that gave the pensão its name.",
+        "capacity": 4,
+        "base_rate_eur": 85,
+        "total_units": 2,
+        "features": [
+          "one double bed and two single beds",
+          "private bathroom with shower",
+          "wall air-conditioning unit",
+          "river glimpse between the rooftops",
+          "in-room safe",
+          "free baby cot on request"
+        ]
+      }
+    ],
+    "facts": [
+      {
+        "topic": "check_in",
+        "question": "What time is check-in?",
+        "answer": "Check-in is from 14:00 to 23:00 at our little reception desk on the 2nd floor. If you'll arrive later than 23:00, don't worry, dear — we arrange self check-in with door codes sent by SMS."
+      },
+      {
+        "topic": "check_out",
+        "question": "When do I need to check out?",
+        "answer": "Check-out is by 11:00. If your flight is later, you're welcome to leave your bags with us for the day at no charge."
+      },
+      {
+        "topic": "late_arrival",
+        "question": "I land after midnight — can I still check in at 2 AM?",
+        "answer": "Of course, dear. Between 23:00 and 06:00 the AI night receptionist confirms your booking, takes the first night's payment by a secure card link sent via SMS, and then sends two codes: one for the street door at Rua dos Douradores 87 and one for the key safe beside the 2nd-floor reception desk, where your room key is waiting."
+      },
+      {
+        "topic": "parking",
+        "question": "Do you have parking?",
+        "answer": "I'm sorry, we have none of our own — Baixa is mostly pedestrian. The nearest garage is the EMEL car park at Praça do Município, about 6 minutes' walk, roughly 21 EUR per 24 hours."
+      },
+      {
+        "topic": "breakfast",
+        "question": "Is breakfast included?",
+        "answer": "Yes, breakfast is included and served from 08:00 to 10:30 in the azulejo-tiled breakfast room: fresh bread from the bakery downstairs, Dona Amália's homemade jams, ham, cheese, fruit and proper Portuguese coffee."
+      },
+      {
+        "topic": "pets",
+        "question": "Can I bring my dog?",
+        "answer": "Small, well-behaved dogs up to about 8 kg are welcome at no extra charge, but only in the ensuite double and family rooms, and we do ask you to arrange it with us in advance."
+      },
+      {
+        "topic": "wifi",
+        "question": "Do you have Wi-Fi?",
+        "answer": "Yes, free Wi-Fi covers the whole house. The network is EstrelaGuest and the password is on the little card on your bedside table."
+      },
+      {
+        "topic": "accessibility",
+        "question": "Is the guesthouse wheelchair accessible?",
+        "answer": "I'm so sorry, dear — we're on the 2nd and 3rd floors of an 18th-century building with no lift, reached by 38 stairs, so sadly we're not suitable for wheelchair users or anyone who struggles with stairs."
+      },
+      {
+        "topic": "payment",
+        "question": "What payment methods do you accept?",
+        "answer": "We take cash in euros, Visa, Mastercard and Maestro debit cards; we don't accept American Express. For night arrivals, the first night is prepaid through a secure card link sent by SMS."
+      },
+      {
+        "topic": "cancellation",
+        "question": "What is your cancellation policy?",
+        "answer": "Cancellation is free until 18:00 Lisbon time on the day before arrival; after that we charge the first night. No-shows are also charged the first night only."
+      },
+      {
+        "topic": "airport_transport",
+        "question": "How do I get there from the airport?",
+        "answer": "From Humberto Delgado Airport take the red metro line to São Sebastião, change to the blue line and get off at Baixa-Chiado — about 35 minutes and around 1.85 EUR. At night a taxi or Bolt takes about 20 minutes and costs roughly 15 to 20 EUR."
+      },
+      {
+        "topic": "luggage_storage",
+        "question": "Can you store my luggage?",
+        "answer": "Yes, free of charge on your arrival and departure days, in the locked cupboard behind reception. The desk is staffed from 08:00 to 23:00 for dropping off and collecting bags."
+      },
+      {
+        "topic": "smoking",
+        "question": "Can I smoke in the room?",
+        "answer": "I'm afraid the whole house is non-smoking, and there's a 60 EUR deep-cleaning charge if a room smells of smoke. Guests usually just step down to the street — it's only one flight of stairs, dear."
+      },
+      {
+        "topic": "children_extra_bed",
+        "question": "Can we add an extra bed for a child?",
+        "answer": "Children are very welcome. A folding extra bed is 15 EUR per night and a baby cot is free — both fit only in the ensuite double and family rooms, and we ask you to request them a day ahead."
+      },
+      {
+        "topic": "air_conditioning",
+        "question": "Do the rooms have air conditioning?",
+        "answer": "The ensuite double and family rooms have quiet wall air-conditioning units. The single and twin rooms have ceiling fans, and in summer reception will happily bring you a portable fan as well."
+      },
+      {
+        "topic": "pool_gym_spa",
+        "question": "Is there a pool, gym or spa?",
+        "answer": "No, dear, we're a small family guesthouse — no pool, gym or spa. But the river is five minutes' walk, and Dona Amália always says the climb up to the Castelo is exercise enough."
+      },
+      {
+        "topic": "neighborhood",
+        "question": "What is the neighbourhood like?",
+        "answer": "We're in the very heart of Baixa, on Rua dos Douradores: Praça do Comércio and the river are 5 minutes' walk, Rossio station 4 minutes, and the Santa Justa lift 3 minutes. Even when we're full I always tell people — stay in Baixa if you can, you'll walk everywhere."
+      },
+      {
+        "topic": "noise",
+        "question": "Is it noisy at night?",
+        "answer": "Our street is much quieter than Rua Augusta, but Baixa is a lively place. The back rooms face a quiet inner courtyard, the front ones face Rua dos Douradores, and there are free earplugs at reception just in case, dear."
+      },
+      {
+        "topic": "room_safe",
+        "question": "Is there a safe in the room?",
+        "answer": "Yes, every room has a small digital safe in the wardrobe — big enough for passports, phones and a tablet. Anything larger can be locked in the main safe at reception."
+      },
+      {
+        "topic": "laundry",
+        "question": "Do you offer laundry service?",
+        "answer": "We do a wash-and-fold service for 12 EUR per load — leave it at reception by 10:00 and it's back the next morning. There's also a self-service launderette on Rua da Prata, about 3 minutes' walk."
+      },
+      {
+        "topic": "early_check_in",
+        "question": "Can I check in early?",
+        "answer": "If your room is ready we'll let you in early at no charge, and you can leave bags with us from 08:00 either way. A guaranteed early check-in from 11:00 costs 15 EUR and needs to be booked the day before."
+      },
+      {
+        "topic": "taxes_fees",
+        "question": "Are there any taxes or extra fees?",
+        "answer": "Lisbon charges a city tourist tax of 4 EUR per person per night, capped at 7 nights, which we collect at the guesthouse; children under 13 are exempt. Our room rates already include VAT."
+      },
+      {
+        "topic": "availability_tonight",
+        "question": "Do you have a room available tonight?",
+        "answer": "I'm so sorry, my dear — all twelve of our rooms are taken tonight, every last one. I can happily check another date for you, or point you to a decent place nearby in Baixa so you're not left wandering the cobbles at this hour."
+      },
+      {
+        "topic": "history",
+        "question": "Who runs the guesthouse?",
+        "answer": "The same family for three generations: Dona Amália runs it today, just as her grandmother Estrela did when she opened the pensão in 1952. Estrela's portrait still hangs in the breakfast room."
+      },
+      {
+        "topic": "name_origin",
+        "question": "What does the name mean?",
+        "answer": "'Estrela do Tejo' means 'Star of the Tagus' — Estrela was the founding grandmother's name, and from the 3rd-floor family room you can just see the river glinting between the rooftops."
+      },
+      {
+        "topic": "dinner_recommendations",
+        "question": "Do you serve dinner or recommend somewhere to eat?",
+        "answer": "We don't serve dinner, but ask at reception for the 'lista da Amália' — her handwritten list of family-run tascas. Her favourite is O Cantinho dos Douradores two doors down, where guests who mention us get a free glass of ginjinha."
+      }
+    ]
+  },
+  {
+    "slug": "grande-hotel-lusitania",
+    "name": "Grande Hotel Lusitânia",
+    "archetype": "five-star grand dame hotel, marble lobby, since 1932",
+    "neighborhood": "Avenida da Liberdade",
+    "address": "Avenida da Liberdade 218, 1250-147 Lisboa, Portugal",
+    "stars": 5,
+    "short_description": "Lisbon's grand dame since 1932 on Avenida da Liberdade: 84 rooms and suites behind a marble lobby, with white-glove service, a heated indoor pool and a chauffeur at the door.",
+    "long_description": "The Grande Hotel Lusitânia has stood at number 218 on Avenida da Liberdade since May 1932, and has never closed its brass doors. The lobby remains as it was built — Estremoz marble floors, a wrought-iron lift cage still operated on request, and the original letterbox by the concierge desk. Behind the period facade, the 84 rooms and suites were quietly renovated in 2023 with double glazing, individually controlled air conditioning and marble bathrooms, while the Salão Nobre still serves afternoon tea as it has since the 1950s. Guests dine at Restaurante Dom Fernando, take a Port flight at Bar Liberdade 1932, and swim in the heated indoor pool beneath the building. A doorman meets every car, valet parking is in-house, and the reception desk is attended around the clock — a tradition the hotel keeps even at four in the morning. Rossio and the Baixa are a ten-minute walk down the avenue; the Avenida metro station is 250 metres from the door.",
+    "policies": {
+      "check_in_from": "15:00",
+      "check_in_until": "00:00",
+      "check_out_until": "12:00",
+      "cancellation": "Free cancellation until 15:00 Lisbon time two days before arrival; after that the first night is charged to the card on file. No-shows are charged the first night.",
+      "pets": "Dogs up to 10 kg are welcome at 45 EUR per night (maximum one per room), with bed and bowls provided. Assistance dogs stay free of charge.",
+      "smoking": "Entirely non-smoking indoors; smoking in a room incurs a 250 EUR deep-cleaning fee. Smoking is permitted on the garden terrace, where ashtrays are provided.",
+      "payment_methods": "Visa, Mastercard, American Express, Diners Club, Apple Pay, Google Pay and cash in euros. A valid credit card is required at the time of booking to guarantee the reservation.",
+      "late_arrival_notes": "Reception is attended 24 hours a day. Between 00:00 and 06:00 the brass front doors on Avenida da Liberdade are locked for security; guests ring the bell at the main entrance and the night concierge admits them and completes check-in personally at any hour. Reservations made overnight by telephone are guaranteed with a credit card, confirmed immediately by SMS, and the room is held all night — the night concierge is notified of every expected arrival by name."
+    },
+    "amenities": [
+      "24-hour attended reception and concierge",
+      "Restaurante Dom Fernando (Portuguese fine dining)",
+      "Bar Liberdade 1932 with Port wine flights",
+      "Heated indoor pool and sauna",
+      "Spa with four treatment rooms",
+      "24-hour fitness centre",
+      "Valet parking in private garage",
+      "24-hour room service",
+      "Same-day laundry and pressing",
+      "Chauffeured airport transfers",
+      "Complimentary fibre Wi-Fi",
+      "Afternoon tea in the Salão Nobre",
+      "Babysitting on request",
+      "Two meeting salons for up to 60 guests"
+    ],
+    "persona": {
+      "style": "formal, impeccable, discreet, courteous",
+      "greeting": "Good evening, you have reached the Grande Hotel Lusitânia on Avenida da Liberdade — I am the hotel's AI night receptionist, at your service; how may I be of assistance?",
+      "speech_quirks": "Speaks in measured, unhurried sentences with classic courtesies — 'very good', 'of course', 'it would be our pleasure' — and never uses slang. Always repeats dates, names and amounts back to the caller for confirmation before proceeding, in the manner of a seasoned concierge.",
+      "escalation_line": "I do apologise — that is a matter I am not able to resolve on the hotel's behalf tonight. With your permission, I shall take a detailed message, and our guest relations team will telephone you after eight o'clock this morning."
+    },
+    "room_types": [
+      {
+        "code": "classic_avenida",
+        "name": "Classic Room",
+        "description": "A 28 m² room over the garden courtyard or the quiet side street, with the hotel's signature Estremoz marble bathroom and understated 1930s-inspired furnishings.",
+        "capacity": 2,
+        "base_rate_eur": 320,
+        "total_units": 38,
+        "features": [
+          "28 m², queen or twin beds",
+          "courtyard or side-street view",
+          "marble bathroom with walk-in shower",
+          "Nespresso machine and kettle",
+          "laptop-sized electronic safe",
+          "double-glazed windows"
+        ]
+      },
+      {
+        "code": "deluxe_liberdade",
+        "name": "Deluxe Avenue Room",
+        "description": "A 34 m² room with a small balcony directly over Avenida da Liberdade, a king bed and a marble bathroom with both tub and shower. Extra bed available.",
+        "capacity": 3,
+        "base_rate_eur": 395,
+        "total_units": 28,
+        "features": [
+          "34 m², king bed",
+          "balcony over Avenida da Liberdade",
+          "marble bathroom with tub and rain shower",
+          "seating area with writing desk",
+          "extra bed available (60 EUR)",
+          "nightly turndown service"
+        ]
+      },
+      {
+        "code": "junior_suite",
+        "name": "Junior Suite",
+        "description": "A 48 m² suite with a separate sitting area and sofa bed for a third guest, choice of avenue or courtyard aspect, and a deep soaking tub.",
+        "capacity": 3,
+        "base_rate_eur": 470,
+        "total_units": 12,
+        "features": [
+          "48 m² with separate sitting area",
+          "avenue or courtyard aspect",
+          "sofa bed for a third guest",
+          "soaking tub and separate rain shower",
+          "walk-in wardrobe",
+          "complimentary soft-drinks minibar"
+        ]
+      },
+      {
+        "code": "lusitania_suite",
+        "name": "Lusitânia Suite",
+        "description": "The 75 m² corner suite on the seventh floor, with a wraparound balcony looking up the avenue towards the castle, original 1932 parquet and two marble bathrooms.",
+        "capacity": 4,
+        "base_rate_eur": 580,
+        "total_units": 6,
+        "features": [
+          "75 m² corner suite, seventh floor",
+          "wraparound balcony with castle view",
+          "original 1932 parquet floors",
+          "dining table for four",
+          "two marble bathrooms",
+          "butler service on request"
+        ]
+      }
+    ],
+    "occupancy_profile": "available",
+    "facts": [
+      {
+        "topic": "check_in",
+        "question": "What time can I check in?",
+        "answer": "Check-in begins at 15:00. If you arrive earlier, the concierge will store your luggage with pleasure and you are welcome to use the lobby bar and the pool while you wait."
+      },
+      {
+        "topic": "check_out",
+        "question": "What time is check-out?",
+        "answer": "Check-out is by 12:00. Late check-out until 15:00 can be arranged for 90 EUR, subject to availability on the day."
+      },
+      {
+        "topic": "late_arrival",
+        "question": "I'll arrive around 2 AM — is that a problem?",
+        "answer": "Not at all — reception is attended 24 hours. Between midnight and 06:00 the front doors are locked for security; simply ring the bell at the main entrance on Avenida da Liberdade and the night concierge will admit you and complete your check-in personally."
+      },
+      {
+        "topic": "late_arrival",
+        "question": "If I book now in the middle of the night, is the room guaranteed?",
+        "answer": "Yes — a reservation guaranteed with a credit card is held for the entire night, and the night concierge is informed of every expected arrival by name. You will receive an SMS confirmation immediately after booking."
+      },
+      {
+        "topic": "parking",
+        "question": "Do you have parking?",
+        "answer": "We offer valet parking in our private garage for 38 EUR per night with unlimited in-and-out privileges. Pull up directly at the entrance and the doorman will take your car."
+      },
+      {
+        "topic": "breakfast",
+        "question": "What time is breakfast and how much does it cost?",
+        "answer": "Breakfast is served in the Salão Nobre from 06:30 to 10:30, until 11:00 on weekends. It costs 34 EUR per person when not included in your rate."
+      },
+      {
+        "topic": "pets",
+        "question": "Can I bring my dog?",
+        "answer": "Dogs up to 10 kg are welcome at 45 EUR per night, one per room, with a bed and bowls provided. Assistance dogs of any size stay free of charge."
+      },
+      {
+        "topic": "wifi",
+        "question": "Is there Wi-Fi?",
+        "answer": "Complimentary fibre Wi-Fi covers the entire hotel. The network is 'Lusitania Guest' and the password is provided at check-in."
+      },
+      {
+        "topic": "accessibility",
+        "question": "Is the hotel wheelchair accessible?",
+        "answer": "Yes — despite the 1932 building, we have a step-free entrance via the ramp at the side door, lifts to all floors, and four accessible Classic rooms with roll-in showers. Please request an accessible room when booking."
+      },
+      {
+        "topic": "payment",
+        "question": "What payment methods do you accept?",
+        "answer": "We accept Visa, Mastercard, American Express, Diners Club, Apple Pay, Google Pay and cash in euros. A valid credit card is required to guarantee any reservation."
+      },
+      {
+        "topic": "cancellation",
+        "question": "What is your cancellation policy?",
+        "answer": "Cancellation is free of charge until 15:00 Lisbon time two days before arrival. After that, or in case of no-show, the first night is charged to the card on file."
+      },
+      {
+        "topic": "airport_transport",
+        "question": "How do I get to the hotel from the airport?",
+        "answer": "Humberto Delgado Airport is about 15 minutes by car. Our chauffeured Mercedes transfer costs 55 EUR each way and can be arranged at any hour, including overnight; a metered taxi is roughly 20 EUR."
+      },
+      {
+        "topic": "luggage_storage",
+        "question": "Can you store my luggage?",
+        "answer": "Certainly — the concierge stores luggage free of charge, both before check-in and after check-out, for as long as you need on the day of travel."
+      },
+      {
+        "topic": "smoking",
+        "question": "Is smoking allowed?",
+        "answer": "The hotel is entirely non-smoking indoors, and smoking in a room incurs a 250 EUR cleaning fee. Guests are welcome to smoke on the garden terrace, where ashtrays are provided."
+      },
+      {
+        "topic": "children_extra_bed",
+        "question": "Do children stay free, and can I get an extra bed?",
+        "answer": "Children under 12 stay free in existing bedding, and a baby cot is provided at no charge. An extra bed is 60 EUR per night and is available in Deluxe Avenue Rooms and the suites."
+      },
+      {
+        "topic": "air_conditioning",
+        "question": "Do the rooms have air conditioning?",
+        "answer": "Yes — every room has individually controlled air conditioning, discreetly retrofitted into the 1932 building, and the windows still open should you prefer fresh air."
+      },
+      {
+        "topic": "pool_gym_spa",
+        "question": "Is there a pool or spa?",
+        "answer": "The heated indoor pool and sauna are open from 07:00 to 21:00, and the fitness centre is open 24 hours with your room key. Spa treatments are best reserved a day in advance."
+      },
+      {
+        "topic": "neighborhood",
+        "question": "What is the area around the hotel like?",
+        "answer": "We stand directly on Avenida da Liberdade, Lisbon's grand boulevard of flagship boutiques and plane trees. Rossio and the Baixa are a ten-minute walk downhill, and the Avenida metro station is 250 metres from our door."
+      },
+      {
+        "topic": "noise",
+        "question": "Is the hotel noisy at night?",
+        "answer": "Rooms facing the avenue were fitted with double glazing in 2023 and are very quiet. For absolute silence we recommend a Classic Room overlooking the interior garden courtyard."
+      },
+      {
+        "topic": "room_safe",
+        "question": "Is there a safe in the room?",
+        "answer": "Every room has a laptop-sized electronic safe. For larger valuables, the reception safe-deposit boxes — in service since 1932 — are at your disposal free of charge."
+      },
+      {
+        "topic": "laundry",
+        "question": "Do you offer laundry service?",
+        "answer": "Laundry collected before 09:00 is returned the same day by 19:00; a shirt is 9 EUR and dry-cleaning a suit is 24 EUR. Express two-hour pressing is also available."
+      },
+      {
+        "topic": "early_check_in",
+        "question": "Can I check in early in the morning?",
+        "answer": "Guaranteed early check-in from 10:00 can be reserved for 50% of the nightly rate. Otherwise we release rooms ahead of 15:00 at no charge whenever housekeeping permits, and store your luggage in the meantime."
+      },
+      {
+        "topic": "taxes_fees",
+        "question": "Are taxes included in the room rate?",
+        "answer": "Quoted rates include 6% VAT. Lisbon's municipal tourist tax of 4 EUR per adult per night, capped at seven nights, is collected separately at check-out."
+      },
+      {
+        "topic": "history",
+        "question": "Has the hotel really been open since 1932?",
+        "answer": "Indeed — we opened in May 1932 and have never closed. The Estremoz marble lobby, the brass letterbox and the wrought-iron lift cage are all original, and the lift is still operated for guests on request."
+      },
+      {
+        "topic": "afternoon_tea",
+        "question": "Do you serve afternoon tea?",
+        "answer": "Afternoon tea is served daily in the Salão Nobre from 16:00 to 18:00 at 28 EUR per person — a house tradition since the 1950s, with warm pastéis de nata to finish."
+      },
+      {
+        "topic": "dress_code",
+        "question": "Is there a dress code at the restaurant?",
+        "answer": "We ask for smart-casual attire at Restaurante Dom Fernando after 19:00 — no sportswear, please. Elsewhere in the hotel, no dress code applies."
+      }
+    ]
+  },
+  {
+    "slug": "the-fado-house",
+    "name": "The Fado House",
+    "archetype": "music-themed bed and breakfast above a fado venue",
+    "neighborhood": "Bairro Alto",
+    "address": "Rua da Atalaia 113, 1200-040 Lisboa, Portugal",
+    "stars": 3,
+    "short_description": "An eleven-room bed and breakfast above a working fado house in the heart of Bairro Alto, where live Portuguese guitar drifts up through the floorboards until midnight and breakfast is served in a vinyl listening lounge.",
+    "long_description": "The Fado House occupies the three floors above one of Bairro Alto's small fado venues, in an 18th-century townhouse on Rua da Atalaia. Downstairs, singers and guitarists perform every night from 19:30 until midnight; upstairs, eleven rooms are dressed with vintage concert posters, record players and the odd playable guitarra. Guests get a reserved table and a first drink on the house at the nightly show, and the breakfast room doubles as a listening lounge stocked with more than 300 fado records. Be warned and be charmed in equal measure: this is the loudest, liveliest corner of Lisbon, and the house makes no apology for it — front rooms hear the music until midnight, back rooms over the courtyard are noticeably quieter, and earplugs sit on every pillow. Reception is staffed from 08:00 to midnight; through the small hours an AI night receptionist answers the phone, takes bookings and issues door codes by SMS, with a duty manager asleep on-site for genuine emergencies.",
+    "policies": {
+      "check_in_from": "15:00",
+      "check_in_until": "23:00",
+      "check_out_until": "11:00",
+      "cancellation": "Free cancellation until 18:00 Lisbon time on the day of arrival; after that the first night is charged to the card on file. No-shows are charged the first night.",
+      "pets": "No pets, owing to the small house and the live music venue downstairs. Certified assistance dogs are always welcome.",
+      "smoking": "Non-smoking throughout the building (90 EUR deep-cleaning fee if violated). Smoking is permitted on the roof terrace until 23:00.",
+      "payment_methods": "Visa, Mastercard, American Express and cash in euros. A valid card is required to guarantee every booking; for night arrivals the first night is pre-charged before access codes are issued.",
+      "late_arrival_notes": "Before midnight, keys can be collected at the bar of the fado house downstairs (open until 00:00). Between 00:00 and 06:00 the AI night receptionist confirms the booking by phone, charges the first night to the guaranteeing card, and sends a one-time street-door code plus a room key-safe code by SMS (also emailed). A duty manager sleeps on-site and can be woken for emergencies."
+    },
+    "amenities": [
+      "Free fibre Wi-Fi (about 300 Mbps)",
+      "Daily Portuguese breakfast included",
+      "Nightly live fado downstairs with reserved guest table",
+      "Vinyl listening lounge with 300+ fado records",
+      "Roof terrace",
+      "Air conditioning in all rooms",
+      "In-room laptop-sized safes",
+      "Free luggage storage",
+      "Earplugs and blackout curtains in every room",
+      "Portuguese guitarra and record players to borrow",
+      "Same-day laundry via partner on Rua da Rosa"
+    ],
+    "persona": {
+      "style": "bohemian, enthusiastic, lyrical, warm",
+      "greeting": "Boa noite, you've reached The Fado House in Bairro Alto — I'm the house's AI night receptionist, keeping watch while the last guitarra fades downstairs; how can I help you?",
+      "speech_quirks": "Speaks in a relaxed, lilting rhythm and slips in Portuguese words — 'boa noite', 'com certeza', 'saudade' — translating them as she goes. Reaches for musical metaphors ('let's tune that booking for you') and gets audibly excited whenever fado, vinyl or the show downstairs comes up.",
+      "escalation_line": "Ah, that one's a verse I haven't learned yet — let me write it down for Inês and the morning team, and they'll call you back after 09:00, prometido — promised."
+    },
+    "room_types": [
+      {
+        "code": "guitarra_double",
+        "name": "Guitarra Double",
+        "description": "Cosy front-facing doubles overlooking Rua da Atalaia, papered with vintage fado concert posters. Atmospheric and right above the music — expect the show through the floor until midnight, then quiet.",
+        "capacity": 2,
+        "base_rate_eur": 95,
+        "total_units": 5,
+        "features": [
+          "queen bed",
+          "street view over Rua da Atalaia",
+          "air conditioning",
+          "double-glazed windows",
+          "rain shower",
+          "earplugs and blackout curtains",
+          "vintage fado posters"
+        ]
+      },
+      {
+        "code": "saudade_superior",
+        "name": "Saudade Superior",
+        "description": "Larger rooms facing the rear courtyard — the quiet side of the house — each with its own record player and a starter stack of fado vinyl. The pick for light sleepers.",
+        "capacity": 2,
+        "base_rate_eur": 120,
+        "total_units": 4,
+        "features": [
+          "king bed",
+          "rear courtyard view (quiet side)",
+          "record player with starter vinyl",
+          "air conditioning",
+          "writing desk",
+          "rain shower"
+        ]
+      },
+      {
+        "code": "poeta_suite",
+        "name": "Poeta Suite",
+        "description": "Two top-floor suites with a separate sitting area, a sofa bed for families, rooftop views toward the Tagus and a playable Portuguese guitarra on the wall.",
+        "capacity": 4,
+        "base_rate_eur": 140,
+        "total_units": 2,
+        "features": [
+          "king bed plus double sofa bed",
+          "separate sitting area",
+          "top floor with rooftop views",
+          "bathtub and rain shower",
+          "playable Portuguese guitarra",
+          "air conditioning"
+        ]
+      }
+    ],
+    "occupancy_profile": "scarce_tonight",
+    "facts": [
+      {
+        "topic": "check_in",
+        "question": "What time is check-in?",
+        "answer": "Check-in runs from 15:00 to 23:00 at the little reception desk beside the fado room. Arriving later than that is no problem — we have a night procedure I can set up on this call."
+      },
+      {
+        "topic": "check_out",
+        "question": "When do I need to check out?",
+        "answer": "Check-out is by 11:00. Late check-out until 13:00 costs 20 EUR when the room isn't re-let — ask the night before."
+      },
+      {
+        "topic": "late_arrival",
+        "question": "I arrive around 2 AM — can I still check in?",
+        "answer": "Com certeza — between midnight and 06:00 I confirm your booking, charge the first night to your card, and text you a one-time street-door code plus a key-safe code for your room, with the same instructions by email. Before midnight, just collect your key from the bar of the fado house downstairs."
+      },
+      {
+        "topic": "parking",
+        "question": "Do you have parking?",
+        "answer": "No — Bairro Alto's streets are closed to most traffic in the evening, so cars can't reach our door. The nearest car park is the EMEL garage on Calçada do Combro, about a 6-minute walk, roughly 25 EUR per 24 hours."
+      },
+      {
+        "topic": "breakfast",
+        "question": "Is breakfast included?",
+        "answer": "Yes, in every rate. Pastéis de nata, fruit, eggs, Portuguese cheeses and proper coffee, served 08:00 to 10:30 in the vinyl lounge — and yes, there's always a record playing."
+      },
+      {
+        "topic": "pets",
+        "question": "Can I bring my dog?",
+        "answer": "We can't take pets, I'm afraid — the house is small and the music room downstairs gets lively at night. Certified assistance dogs are always welcome."
+      },
+      {
+        "topic": "wifi",
+        "question": "Is there Wi-Fi?",
+        "answer": "Free fibre Wi-Fi throughout, around 300 Mbps. The network is 'FadoHouse' and the password comes with your check-in pack or in your SMS arrival instructions."
+      },
+      {
+        "topic": "accessibility",
+        "question": "Is the hotel wheelchair accessible?",
+        "answer": "Honestly, no. We're an 18th-century townhouse with a narrow staircase, no lift, and all rooms on the first to third floors. We'll happily carry luggage, but wheelchair access isn't possible."
+      },
+      {
+        "topic": "payment",
+        "question": "What payment methods do you accept?",
+        "answer": "Visa, Mastercard, American Express and euro cash at the desk. A card guarantees every booking, and for night arrivals I charge the first night to that card before sending door codes."
+      },
+      {
+        "topic": "cancellation",
+        "question": "What's the cancellation policy?",
+        "answer": "Free cancellation until 18:00 Lisbon time on your arrival day; after that, or for a no-show, we charge the first night."
+      },
+      {
+        "topic": "airport_transport",
+        "question": "How do I get here from the airport?",
+        "answer": "A taxi or Uber from Humberto Delgado Airport takes about 20 minutes and costs 15-20 EUR; at night drivers drop you at Praça Luís de Camões, a 4-minute walk from our door. By metro it's the red line to Alameda, green line to Baixa-Chiado, then a 7-minute walk uphill — about 2 EUR."
+      },
+      {
+        "topic": "luggage_storage",
+        "question": "Can I leave my bags before check-in or after check-out?",
+        "answer": "Yes — free storage in the lockable luggage room beside reception, on both arrival and departure days, available until midnight."
+      },
+      {
+        "topic": "smoking",
+        "question": "Can I smoke in the room?",
+        "answer": "All rooms are strictly non-smoking — a 90 EUR cleaning fee applies otherwise — but you're welcome on the roof terrace, which is open until 23:00."
+      },
+      {
+        "topic": "children_extra_bed",
+        "question": "Are children welcome, and can we get an extra bed?",
+        "answer": "Children are very welcome; the Poeta Suite sleeps up to four with its sofa bed, and an extra bed is 25 EUR per night in the suites only. A baby cot is free for under-twos — though do remember the live fado plays until midnight, so light sleepers prefer our rear-facing Saudade rooms."
+      },
+      {
+        "topic": "air_conditioning",
+        "question": "Do the rooms have air conditioning?",
+        "answer": "Yes, every room has individually controlled air conditioning and double-glazed windows."
+      },
+      {
+        "topic": "pool_gym_spa",
+        "question": "Is there a pool, gym or spa?",
+        "answer": "None of the three — we're a small music house, not a resort. A gym on nearby Rua do Loreto sells day passes for about 10 EUR if you need one."
+      },
+      {
+        "topic": "neighborhood",
+        "question": "What's the neighbourhood like?",
+        "answer": "We're in the heart of Bairro Alto, Lisbon's nightlife and fado quarter — tiny restaurants, bars on every corner, and the São Pedro de Alcântara viewpoint 3 minutes away. Lively until very late, and magical at dawn."
+      },
+      {
+        "topic": "noise",
+        "question": "Is it noisy at night?",
+        "answer": "I'll sing it straight: yes. Our own fado house plays live until midnight and you'll hear the guitarra through the floor in the front Guitarra rooms, and Bairro Alto's streets stay loud until around 02:00 on weekends. Earplugs are on every pillow, and the rear-facing Saudade Superior rooms are much quieter."
+      },
+      {
+        "topic": "room_safe",
+        "question": "Is there a safe in the room?",
+        "answer": "Yes, every room has a laptop-sized electronic safe, free to use."
+      },
+      {
+        "topic": "laundry",
+        "question": "Do you offer laundry service?",
+        "answer": "We partner with a laundry on Rua da Rosa: leave a bag at reception by 09:30 and it's back the same evening, 18 EUR per bag."
+      },
+      {
+        "topic": "early_check_in",
+        "question": "Can I check in early?",
+        "answer": "If your room is ready we'll hand over keys from 12:00 for a 20 EUR early-arrival fee; otherwise store your bags with us for free and go enjoy the miradouro until 15:00."
+      },
+      {
+        "topic": "taxes_fees",
+        "question": "Are taxes included in the room rate?",
+        "answer": "Rates include VAT. Lisbon's municipal tourist tax — 4 EUR per person per night, up to 7 nights, children under 13 exempt — is collected at the hotel."
+      },
+      {
+        "topic": "fado_show",
+        "question": "Can guests attend the fado show downstairs?",
+        "answer": "Of course — that's the soul of the house. Sets run nightly from 19:30 until midnight, guests get a reserved table and the first glass of vinho verde on us, and booking through reception is wise because the room only seats 40."
+      },
+      {
+        "topic": "vinyl_lounge",
+        "question": "What's the vinyl lounge?",
+        "answer": "Our breakfast room doubles as a listening lounge with over 300 fado records, from Amália Rodrigues to Carminho, plus a Portuguese guitarra you can borrow. Ask at the desk and we'll put anything you like on the turntable."
+      },
+      {
+        "topic": "amateur_night",
+        "question": "Can I sing fado myself?",
+        "answer": "On Wednesdays we hold an open 'fado vadio' night from 21:00 — anyone brave enough may sing, accompanied by our resident guitarist Tó Zé, and house guests get first pick of the slots."
+      },
+      {
+        "topic": "night_reception",
+        "question": "Is reception staffed 24 hours?",
+        "answer": "A human is at the desk from 08:00 to midnight. From midnight to 06:00 I — the AI night receptionist — handle calls, bookings and door codes, and a duty manager sleeps on-site for genuine emergencies."
+      }
+    ]
+  },
+  {
+    "slug": "lisboa-riverside-suites",
+    "name": "Lisboa Riverside Suites",
+    "archetype": "modern aparthotel with kitchenettes and river views",
+    "neighborhood": "Cais do Sodré",
+    "address": "Avenida 24 de Julho 58, 1200-868 Lisboa, Portugal",
+    "stars": 4,
+    "short_description": "A 36-unit design aparthotel on Avenida 24 de Julho in Cais do Sodré, pairing full kitchenettes and keyless smart-lock entry with Tagus river views, a 24/7 gym and a coworking lounge.",
+    "long_description": "Lisboa Riverside Suites occupies a converted 1950s shipping-company office building on Avenida 24 de Julho, a two-minute walk from Cais do Sodré station and the Tagus riverfront. The 36 studios and apartments are built for stays of one night to one month: every unit has a kitchenette with induction hob, microwave-oven, dishwasher drawer and Nespresso machine, plus a work desk, 1 Gbps fibre wifi and individually controlled air conditioning. Upper floors on the south side look straight over the river to the Cristo Rei statue. The ground floor runs like a well-organised startup office — self check-in kiosks backed by staff from 07:00 to 23:00, a grab-and-go breakfast market, luggage lockers, and a coworking lounge with two bookable meeting pods. Floor -1 holds a 24/7 self-service gym and a guest laundry room; the rooftop terrace, Deck 7, has loungers, an honesty bar and an uninterrupted view of the 25 de Abril bridge. Outside business hours the property is run by its AI receptionist, which handles bookings, door codes and arrivals at any hour, including the middle of the night.",
+    "policies": {
+      "check_in_from": "15:00",
+      "check_in_until": "23:00 at the staffed desk; self check-in via kiosk or smart-lock code available 24 hours",
+      "check_out_until": "11:00",
+      "cancellation": "Free cancellation until 15:00 (Lisbon time) on the day before arrival; after that the first night is charged to the card on file. No-shows are charged the first night and the rest of the booking is released.",
+      "pets": "One dog or cat up to 12 kg is welcome in Studio units for a 20 EUR cleaning fee per stay; pets are not permitted in the One-Bedroom Suites or Two-Bedroom Apartments. Pets may not be left unattended in the unit.",
+      "smoking": "Strictly non-smoking in all units and on all balconies and the rooftop; a 150 EUR deep-cleaning fee applies if violated. Vaping counts as smoking.",
+      "payment_methods": "Visa, Mastercard, American Express, Apple Pay and Google Pay. A valid card is pre-authorised for the first night at booking. The property is cashless — no cash accepted on site.",
+      "late_arrival_notes": "The desk is staffed 07:00-23:00. Between 23:00 and 07:00 the AI receptionist manages arrivals: once a booking is confirmed and the card pre-authorisation succeeds, the guest receives an SMS and email with a one-time PIN for the street door on Avenida 24 de Julho and a smart-lock code for their unit, valid from 15:00 on arrival day until 11:00 on departure day. This works identically for arrivals between midnight and 06:00 — guests can book at 02:00 and walk in ten minutes later. If a code fails, the AI receptionist can reissue it on the phone after verifying the booking name and the last four digits of the card."
+    },
+    "amenities": [
+      "Kitchenette in every unit (induction hob, microwave-oven, dishwasher drawer, Nespresso machine)",
+      "Free 1 Gbps fibre wifi",
+      "24/7 self-service gym (floor -1)",
+      "Deck 7 rooftop terrace with river view and honesty bar",
+      "Coworking lounge with two bookable meeting pods",
+      "Self check-in kiosks and smart-lock keyless entry",
+      "Grab-and-go breakfast market (06:30-10:30)",
+      "Self-service guest laundry room",
+      "Luggage lockers in the lobby",
+      "Air conditioning, individually controlled",
+      "Laptop-size electronic safe in every unit",
+      "Two fully accessible studios with roll-in showers",
+      "Stocked Fridge grocery pre-arrival service"
+    ],
+    "persona": {
+      "style": "efficient, precise, upbeat, lightly corporate",
+      "greeting": "Good evening, you've reached Lisboa Riverside Suites in Cais do Sodré — I'm the property's AI night receptionist, and I can handle bookings, door codes and questions right now; how can I help?",
+      "speech_quirks": "Speaks in short, structured sentences and always confirms details back before acting — dates, names, card digits — with a quick 'Let me confirm that back to you.' Favors crisp closers like 'Perfect, you're all set' and proactively states the next step and exact timing rather than leaving anything open-ended.",
+      "escalation_line": "That one's outside what I can resolve tonight, so here's what I'll do: I'm logging it for our guest experience team right now, and a team member will get back to you after the desk opens at 07:00 — can I take the best number or email to reach you?"
+    },
+    "room_types": [
+      {
+        "code": "studio_city",
+        "name": "Studio, City Side",
+        "description": "26 m2 studio facing Rua de São Paulo with a queen bed, full kitchenette, work desk and rain shower. Floors 1-3; quiet-side rooms on request.",
+        "capacity": 2,
+        "base_rate_eur": 150,
+        "total_units": 14,
+        "features": [
+          "Queen bed",
+          "Kitchenette with induction hob and dishwasher drawer",
+          "Work desk with monitor-ready HDMI hub",
+          "Rain shower",
+          "55-inch smart TV",
+          "Blackout blinds"
+        ]
+      },
+      {
+        "code": "studio_river",
+        "name": "Studio, River View",
+        "description": "28 m2 studio on floors 4-6 with floor-to-ceiling windows over the Tagus and the 25 de Abril bridge. Queen bed, kitchenette and a small Juliet balcony.",
+        "capacity": 2,
+        "base_rate_eur": 185,
+        "total_units": 10,
+        "features": [
+          "River view with Juliet balcony",
+          "Queen bed",
+          "Kitchenette with Nespresso machine",
+          "Work desk",
+          "Rain shower",
+          "Blackout blinds"
+        ]
+      },
+      {
+        "code": "one_bedroom_suite",
+        "name": "One-Bedroom Riverside Suite",
+        "description": "42 m2 suite with a separate bedroom (king bed), living room with double sofa bed, dining table for four and an extended kitchenette. South-facing river views on floors 4-6.",
+        "capacity": 3,
+        "base_rate_eur": 230,
+        "total_units": 8,
+        "features": [
+          "Separate bedroom with king bed",
+          "Living room with double sofa bed",
+          "River view",
+          "Dining table for four",
+          "Extended kitchenette with full-size fridge",
+          "Two smart TVs"
+        ]
+      },
+      {
+        "code": "two_bedroom_apartment",
+        "name": "Two-Bedroom Apartment",
+        "description": "58 m2 corner apartment with two bedrooms (one king, two twins), a living-dining area, full kitchenette and washer-dryer in the unit. Sleeps up to five with the sofa bed; ideal for families or small teams.",
+        "capacity": 5,
+        "base_rate_eur": 260,
+        "total_units": 4,
+        "features": [
+          "Two separate bedrooms",
+          "Single sofa bed in living room",
+          "In-unit washer-dryer",
+          "Full-size fridge and dining table for six",
+          "Corner windows with partial river view",
+          "Two bathrooms"
+        ]
+      }
+    ],
+    "occupancy_profile": "available",
+    "facts": [
+      {
+        "topic": "check_in",
+        "question": "What time is check-in?",
+        "answer": "Check-in starts at 15:00. The desk is staffed until 23:00, and the self check-in kiosks and smart-lock codes work around the clock, so you can arrive at any hour."
+      },
+      {
+        "topic": "check_out",
+        "question": "What time do I have to check out?",
+        "answer": "Check-out is by 11:00 — your smart-lock code expires then. Late check-out until 14:00 costs 30 EUR, subject to availability; just ask the night before."
+      },
+      {
+        "topic": "late_arrival",
+        "question": "I'll arrive around 2 AM — is that a problem?",
+        "answer": "Not at all; we're fully set up for it. Once your booking is confirmed you'll get an SMS and email with a one-time PIN for the street door and a smart-lock code for your unit, so a 02:00 arrival works exactly like a 16:00 one. If a code ever fails, call this number and I'll reissue it after verifying your booking name and the last four card digits."
+      },
+      {
+        "topic": "early_check_in",
+        "question": "Can I check in before 15:00?",
+        "answer": "Early check-in from 12:00 is 30 EUR when a unit is ready — we confirm by 09:00 on arrival day. Before that, you're welcome to leave bags in our free lobby lockers and use the coworking lounge."
+      },
+      {
+        "topic": "parking",
+        "question": "Do you have parking?",
+        "answer": "We have no on-site parking. We partner with the Parque da Moeda garage on Rua da Moeda, a 4-minute walk, at a guest rate of 24 EUR per 24 hours — ask us for the validation QR code at check-in."
+      },
+      {
+        "topic": "breakfast",
+        "question": "Is breakfast included?",
+        "answer": "Breakfast isn't included in the room rate. Our lobby breakfast market runs 06:30-10:30 with breakfast boxes at 9.50 EUR (pastry, fruit, yogurt, juice and coffee), or you can pre-stock your kitchenette through our Stocked Fridge service."
+      },
+      {
+        "topic": "pets",
+        "question": "Can I bring my dog?",
+        "answer": "Yes — one dog or cat up to 12 kg is welcome in our Studio units for a 20 EUR cleaning fee per stay. Pets aren't permitted in the suites or apartments, and they can't be left unattended in the unit."
+      },
+      {
+        "topic": "wifi",
+        "question": "How is the wifi?",
+        "answer": "Free 1 Gbps fibre throughout, with a mesh access point in every unit. Connect to the LRS_Guest network with the code on your welcome screen — it comfortably handles video calls and streaming."
+      },
+      {
+        "topic": "accessibility",
+        "question": "Is the hotel wheelchair accessible?",
+        "answer": "Yes — the entrance on Avenida 24 de Julho is step-free, lifts serve all floors including the gym and rooftop, and we have two accessible city-side studios with roll-in showers and 90 cm doorways. Please mention accessibility needs at booking so we can assign one."
+      },
+      {
+        "topic": "payment",
+        "question": "How can I pay? Do you take cash?",
+        "answer": "We accept Visa, Mastercard, American Express, Apple Pay and Google Pay; the first night is pre-authorised on your card at booking. The property is cashless, so we can't accept cash on site."
+      },
+      {
+        "topic": "cancellation",
+        "question": "What is your cancellation policy?",
+        "answer": "Cancellation is free until 15:00 Lisbon time on the day before arrival. After that, or for a no-show, the first night is charged to the card on file and the remaining nights are released."
+      },
+      {
+        "topic": "airport_transport",
+        "question": "How do I get there from the airport?",
+        "answer": "A taxi or Uber from Humberto Delgado Airport takes 20-25 minutes and costs about 15-20 EUR at night. By metro it's around 35 minutes: Red line to Alameda, then Green line to Cais do Sodré station, which is a 3-minute walk from our door — or we can pre-book a private transfer for 35 EUR."
+      },
+      {
+        "topic": "luggage_storage",
+        "question": "Can I store my luggage before check-in or after check-out?",
+        "answer": "Yes — free self-service lockers in the lobby, available on your arrival and departure days. The largest lockers fit two big suitcases; codes are issued at the kiosk or by SMS."
+      },
+      {
+        "topic": "smoking",
+        "question": "Can I smoke in the room or on the balcony?",
+        "answer": "No — the whole property is non-smoking, including balconies and the rooftop, and vaping counts. Smoking in a unit triggers a 150 EUR deep-cleaning fee; the nearest spot is street level outside the main entrance."
+      },
+      {
+        "topic": "children_extra_bed",
+        "question": "Do you have extra beds or cots for children?",
+        "answer": "Cots for children under 3 are free in any unit — request one at booking. The One-Bedroom Suite sleeps a third guest on its double sofa bed at no extra charge, and the Two-Bedroom Apartment sleeps five; we don't place rollaway beds in Studios."
+      },
+      {
+        "topic": "air_conditioning",
+        "question": "Do the rooms have air conditioning?",
+        "answer": "Yes, every unit has individually controlled air conditioning and heating, adjustable from the wall panel or the in-room tablet."
+      },
+      {
+        "topic": "pool_gym_spa",
+        "question": "Is there a pool, gym or spa?",
+        "answer": "There's no pool or spa, but the self-service gym on floor -1 is open 24/7 with your room code — cardio machines, dumbbells to 30 kg and a squat rack. The Deck 7 rooftop terrace is open 08:00-22:00 for the river view instead."
+      },
+      {
+        "topic": "neighborhood",
+        "question": "What's the area like and what's nearby?",
+        "answer": "We're in Cais do Sodré, two minutes from the riverfront promenade and three from Cais do Sodré station, where trains leave for Cascais and the ferry crosses to Cacilhas. The Time Out Market is a 5-minute walk, and Praça do Comércio about 10 minutes along the river."
+      },
+      {
+        "topic": "noise",
+        "question": "Is it noisy at night? I've heard Cais do Sodré has a lot of nightlife.",
+        "answer": "The bars of Rua Nova do Carvalho (the Pink Street) are about 300 metres away, so the immediate block is lively on weekends. All units have soundproofed double glazing, and if you're noise-sensitive ask for a river-facing unit on floors 4-6 — they face away from the nightlife."
+      },
+      {
+        "topic": "room_safe",
+        "question": "Is there a safe in the room?",
+        "answer": "Yes, every unit has a laptop-size electronic safe in the wardrobe — you set your own 4-digit code. The desk can also hold passports or valuables in the office safe during staffed hours."
+      },
+      {
+        "topic": "laundry",
+        "question": "Can I do laundry at the hotel?",
+        "answer": "There's a self-service laundry room on floor -1, open 07:00-22:00: 4 EUR per wash including detergent and 3 EUR per dryer cycle, paid by card or room charge. The Two-Bedroom Apartments also have their own in-unit washer-dryer."
+      },
+      {
+        "topic": "taxes_fees",
+        "question": "Are there any taxes or fees on top of the room rate?",
+        "answer": "Rates include VAT. Lisbon charges a municipal tourist tax of 4 EUR per person per night, capped at 7 nights, with children under 13 exempt — it's added to your card at check-in."
+      },
+      {
+        "topic": "kitchenette_grocery",
+        "question": "Can the kitchenette be stocked before I arrive?",
+        "answer": "Yes — our Stocked Fridge service pre-fills your kitchenette before arrival for a 15 EUR service fee plus the cost of groceries. Order at least 24 hours ahead from the standard list (breakfast basics, fruit, wine, oat milk) or send us your own list."
+      },
+      {
+        "topic": "coworking",
+        "question": "Is there somewhere I can work or take a video call?",
+        "answer": "The ground-floor coworking lounge is free for guests from 08:00 to 20:00, with standing desks and printing. The two soundproofed meeting pods seat four and can be booked at the kiosk in 60-minute blocks, free of charge."
+      },
+      {
+        "topic": "rooftop",
+        "question": "Do you have a rooftop or somewhere to watch the sunset?",
+        "answer": "Yes — Deck 7, our rooftop terrace, is open to guests 08:00-22:00 with loungers and a direct view over the Tagus to the 25 de Abril bridge. It runs an honesty bar: take a drink from the fridge, scan the QR code, and it's charged to your room."
+      }
+    ]
+  },
+  {
+    "slug": "hotel-jacaranda",
+    "name": "Hotel Jacarandá",
+    "archetype": "garden boutique hotel with a courtyard of jacaranda trees",
+    "neighborhood": "Príncipe Real",
+    "address": "Rua de São Marçal 47, 1200-419 Lisboa, Portugal",
+    "stars": 4,
+    "short_description": "A 24-room garden boutique hotel on a quiet street in Príncipe Real, built around a walled courtyard shaded by two old jacaranda trees, with breakfast served under the branches and a 24-hour honesty bar.",
+    "long_description": "Hotel Jacarandá occupies a restored 19th-century townhouse on Rua de São Marçal, a calm residential street two minutes from the Príncipe Real garden and next door to Lisbon's Botanical Garden. The heart of the house is its walled courtyard, where two mature jacaranda trees turn the whole patio violet in late May and June. The 24 rooms are spread over four floors served by a lift, dressed in soft greens, linen, and botanical prints; the quietest face the courtyard, while street-facing rooms have double glazing. Breakfast is served under the trees in fair weather, the library lounge pours complimentary garden-herb tisanes every evening, and a 24-hour honesty bar stocks Portuguese wines. Reception is staffed from 07:00 to midnight; overnight, an AI receptionist handles calls and arrivals with an SMS door-code system, so a 2 AM landing is never a problem.",
+    "policies": {
+      "check_in_from": "15:00",
+      "check_in_until": "00:00 at the staffed desk; after midnight self check-in via SMS door code (see late arrival notes)",
+      "check_out_until": "12:00",
+      "cancellation": "Free cancellation until 16:00 (Lisbon time) on the day before arrival; after that the first night is charged to the card on file. No-shows are charged the first night.",
+      "pets": "One dog up to 10 kg per room, 15 EUR per night; dogs are welcome in the courtyard on a leash but not in the breakfast area during service (07:30-10:30).",
+      "smoking": "Non-smoking throughout the building; a designated smoking corner with ashtrays sits at the far end of the courtyard. Smoking in a room incurs a 150 EUR cleaning fee.",
+      "payment_methods": "Visa, Mastercard, American Express, Maestro, Apple Pay and Google Pay; cash in euros accepted at the desk between 07:00 and 00:00. A valid card is required to guarantee every booking.",
+      "late_arrival_notes": "Reception is staffed until 00:00. Between 00:00 and 06:00 the AI night receptionist confirms the booking, pre-authorises the card on file, and sends a one-time 6-digit code by SMS that opens the street gate at Rua de São Marçal 47 and the key safe in the entrance hall containing the room key. A night porter at the partner property on Rua da Palmeira is on call for any problem with the code."
+    },
+    "amenities": [
+      "Jacaranda courtyard garden",
+      "Courtyard breakfast (07:30-10:30)",
+      "24-hour honesty bar with Portuguese wines",
+      "Library lounge with evening herbal tisanes",
+      "Free fibre Wi-Fi (~300 Mbps)",
+      "Individually controlled air conditioning",
+      "Lift to all floors",
+      "In-room laptop-size safe",
+      "Same-day laundry service (Mon-Sat)",
+      "Free luggage storage",
+      "Massage treatment room (by appointment)",
+      "Two accessible rooms with roll-in showers",
+      "Babycots free of charge"
+    ],
+    "persona": {
+      "style": "serene, botanical, soft-spoken, unhurried",
+      "greeting": "Good evening, you've reached Hotel Jacarandá in Príncipe Real — I'm the hotel's AI night receptionist, and I'm happy to help however I can.",
+      "speech_quirks": "Speaks slowly and softly, with gentle pauses, and never rushes a caller — favourite phrases include \"take your time\" and \"let me see what we have in bloom for those dates.\" Often reaches for quiet garden imagery, comparing a free room to \"a spot opening up under the trees.\"",
+      "escalation_line": "That's something I'd rather leave in the careful hands of our morning team — may I take your name and number, and they'll call you back soon after 08:00?"
+    },
+    "room_types": [
+      {
+        "code": "garden_double",
+        "name": "Garden Double",
+        "description": "A calm double on the upper floors with queen bed, linen curtains and botanical prints; most overlook the rooftops of Rua de São Marçal, with double-glazed windows on the street side.",
+        "capacity": 2,
+        "base_rate_eur": 130,
+        "total_units": 10,
+        "features": [
+          "Queen bed",
+          "Double-glazed windows",
+          "Rain shower",
+          "Individually controlled A/C",
+          "Laptop-size safe",
+          "Nespresso machine and tisane kit"
+        ]
+      },
+      {
+        "code": "courtyard_deluxe",
+        "name": "Courtyard Deluxe",
+        "description": "A larger double facing the inner courtyard, with a Juliet balcony directly over the jacaranda canopy — violet views in late May and June and the quietest sleep in the house.",
+        "capacity": 2,
+        "base_rate_eur": 155,
+        "total_units": 8,
+        "features": [
+          "King bed",
+          "Juliet balcony over the courtyard",
+          "Bathtub and rain shower",
+          "Sitting corner with armchair",
+          "Individually controlled A/C",
+          "Laptop-size safe"
+        ]
+      },
+      {
+        "code": "garden_family",
+        "name": "Garden Family Room",
+        "description": "A ground-floor room with a king bed and two single daybeds, opening through French doors onto a small private patio at the edge of the courtyard garden.",
+        "capacity": 4,
+        "base_rate_eur": 175,
+        "total_units": 3,
+        "features": [
+          "King bed plus two single daybeds",
+          "Private patio with garden access",
+          "Two washbasins",
+          "Individually controlled A/C",
+          "Laptop-size safe",
+          "Cot space"
+        ]
+      },
+      {
+        "code": "jacaranda_suite",
+        "name": "Jacaranda Suite",
+        "description": "The top-floor suite with a separate sitting room, sofa bed for a third guest, and a private terrace looking down into the crowns of the jacaranda trees.",
+        "capacity": 3,
+        "base_rate_eur": 190,
+        "total_units": 3,
+        "features": [
+          "King bed and separate sitting room",
+          "Sofa bed for one extra guest",
+          "Private terrace over the courtyard",
+          "Bathtub and walk-in shower",
+          "Individually controlled A/C",
+          "Welcome bottle of Portuguese sparkling wine"
+        ]
+      }
+    ],
+    "occupancy_profile": "available",
+    "facts": [
+      {
+        "topic": "check_in",
+        "question": "What time can I check in?",
+        "answer": "Check-in opens at 15:00 and the desk is staffed until midnight. If you arrive earlier we'll store your luggage for free and you're welcome to wait in the courtyard or library lounge."
+      },
+      {
+        "topic": "check_out",
+        "question": "When do I need to check out?",
+        "answer": "Check-out is by 12:00. Late check-out until 14:00 costs 30 EUR and is subject to availability — just ask the evening before."
+      },
+      {
+        "topic": "late_arrival",
+        "question": "I land late — can I still check in at 2 AM?",
+        "answer": "Yes. Between midnight and 06:00 our AI night receptionist confirms your booking, pre-authorises your card, and sends a one-time 6-digit code by SMS that opens the street gate at Rua de São Marçal 47 and the key safe in the entrance hall with your room key. If anything goes wrong, an on-call night porter from our partner house on Rua da Palmeira can be there within minutes."
+      },
+      {
+        "topic": "early_check_in",
+        "question": "Can I check in before 15:00?",
+        "answer": "If your room is ready we offer early check-in from 12:00 for 25 EUR, subject to availability. Otherwise luggage storage is free and the courtyard is yours while you wait."
+      },
+      {
+        "topic": "parking",
+        "question": "Do you have parking?",
+        "answer": "We have no on-site parking, but we have an agreement with the Parque do Príncipe Real garage on Praça do Príncipe Real, a 3-minute walk away — 24 EUR per 24 hours with validation from our desk."
+      },
+      {
+        "topic": "breakfast",
+        "question": "What time is breakfast and how much does it cost?",
+        "answer": "Breakfast is served 07:30-10:30 (until 11:00 on weekends), in the jacaranda courtyard in fair weather or the garden room otherwise. It's included in most rates; otherwise it's 16 EUR per person, with fresh pastries from a bakery on Rua Dom Pedro V."
+      },
+      {
+        "topic": "pets",
+        "question": "Can I bring my dog?",
+        "answer": "One dog up to 10 kg per room is welcome for 15 EUR per night. Dogs may join you in the courtyard on a leash, but not in the breakfast area during service."
+      },
+      {
+        "topic": "wifi",
+        "question": "Is there Wi-Fi?",
+        "answer": "Yes, free fibre Wi-Fi at around 300 Mbps throughout the house and courtyard. The network is \"Jacaranda Guest\" and the password is on your key card sleeve."
+      },
+      {
+        "topic": "accessibility",
+        "question": "Is the hotel wheelchair accessible?",
+        "answer": "The entrance is step-free via a ramp at the gate, a lift serves all four floors, and two of our Garden Doubles are adapted with roll-in showers and grab rails. Tell us in advance and we'll hold one for you."
+      },
+      {
+        "topic": "payment",
+        "question": "What payment methods do you accept?",
+        "answer": "Visa, Mastercard, American Express, Maestro, Apple Pay and Google Pay; cash in euros is accepted at the desk between 07:00 and midnight. A card is required to guarantee every booking, and overnight self check-ins are card-only."
+      },
+      {
+        "topic": "cancellation",
+        "question": "What is your cancellation policy?",
+        "answer": "Cancellation is free until 16:00 Lisbon time on the day before arrival. After that, and for no-shows, we charge the first night to the card on file."
+      },
+      {
+        "topic": "airport_transport",
+        "question": "How do I get to the hotel from the airport?",
+        "answer": "A taxi or app ride from Humberto Delgado Airport takes about 20 minutes and costs 15-20 EUR. By metro it's the red line to São Sebastião, then the yellow line to Rato, about 35 minutes and 1.85 EUR, plus an 8-minute walk. We can also book a private transfer for 35 EUR."
+      },
+      {
+        "topic": "luggage_storage",
+        "question": "Can you store my luggage?",
+        "answer": "Yes, free of charge in our locked luggage room on your arrival and departure days, any time the desk is staffed (07:00-00:00)."
+      },
+      {
+        "topic": "smoking",
+        "question": "Is smoking allowed?",
+        "answer": "The building is entirely non-smoking; there's a designated smoking corner with ashtrays at the far end of the courtyard. Smoking in a room carries a 150 EUR cleaning fee."
+      },
+      {
+        "topic": "children_extra_bed",
+        "question": "Do you accommodate children, and is there an extra bed?",
+        "answer": "Children are very welcome. Cots are free for under-twos, a folding bed is 25 EUR per night in the Courtyard Deluxe and Jacaranda Suite, and the Garden Family Room sleeps four with its own patio."
+      },
+      {
+        "topic": "air_conditioning",
+        "question": "Do the rooms have air conditioning?",
+        "answer": "Yes, every room has individually controlled air conditioning and heating, so you can set your own temperature year-round."
+      },
+      {
+        "topic": "pool_gym_spa",
+        "question": "Is there a pool, gym or spa?",
+        "answer": "No pool or gym, I'm afraid — we're a small garden house. We do have a quiet treatment room where massages (60-90 EUR) can be booked through reception with a day's notice."
+      },
+      {
+        "topic": "neighborhood",
+        "question": "What's the neighbourhood like and what's nearby?",
+        "answer": "We're on a calm residential street in Príncipe Real: the Príncipe Real garden and its weekend organic market are 2 minutes away, Lisbon's Botanical Garden entrance on Rua da Escola Politécnica is practically next door, and Bairro Alto is a 10-minute walk for evenings out."
+      },
+      {
+        "topic": "noise",
+        "question": "Is the hotel quiet at night?",
+        "answer": "Very. Rua de São Marçal is residential and the Bairro Alto nightlife doesn't reach us; courtyard-facing rooms are the stillest, and street-facing rooms have double glazing."
+      },
+      {
+        "topic": "room_safe",
+        "question": "Is there a safe in the room?",
+        "answer": "Yes, every room has an electronic laptop-size safe in the wardrobe."
+      },
+      {
+        "topic": "laundry",
+        "question": "Do you offer laundry service?",
+        "answer": "Yes — leave the laundry bag at the desk by 09:00, Monday to Saturday, and it returns the same day by 19:00. Pricing is per piece; a shirt is 4.50 EUR."
+      },
+      {
+        "topic": "taxes_fees",
+        "question": "Are taxes included in the room rate?",
+        "answer": "VAT is included in all quoted rates. Lisbon's municipal tourist tax of 4 EUR per person per night, charged for up to 7 nights and waived for children under 13, is added at check-out."
+      },
+      {
+        "topic": "jacaranda_bloom",
+        "question": "When do the jacaranda trees bloom?",
+        "answer": "Our two courtyard jacarandas flower from roughly mid-May to late June, turning the patio violet — the Courtyard Deluxe rooms and the suite terrace look straight into the canopy. Those weeks book up earliest each year."
+      },
+      {
+        "topic": "evening_tea_ritual",
+        "question": "I heard you serve evening tea — what is that?",
+        "answer": "Every evening from 18:00 to 22:00 the library lounge serves complimentary tisanes blended from herbs grown in our own courtyard beds — verbena, lemon balm and mint. It's our quiet alternative to a happy hour."
+      },
+      {
+        "topic": "honesty_bar",
+        "question": "Can I get a drink late at night?",
+        "answer": "Yes — the honesty bar in the library lounge is open 24 hours, stocked with Portuguese wines, beers and soft drinks. You simply note what you take on the ledger and it's added to your room bill."
+      }
+    ]
+  },
+  {
+    "slug": "casa-dos-azulejos",
+    "name": "Casa dos Azulejos",
+    "archetype": "heritage inn famous for original azulejo tile interiors",
+    "neighborhood": "Mouraria",
+    "address": "Rua do Capelão 27, 1100-218 Lisboa, Portugal",
+    "stars": 3,
+    "short_description": "A 12-room heritage inn in a 1742 tile merchant's townhouse in Mouraria, kept much as it was — original blue-and-white azulejo panels, a chestnut staircase that creaks, and breakfast under painted ceilings.",
+    "long_description": "Casa dos Azulejos occupies a four-storey townhouse built in 1742 for a tile merchant on Rua do Capelão, in the heart of Mouraria — the lane where fado was born. The house keeps its original 18th-century azulejo panels in the stairwell, breakfast room and several bedrooms, restored in 2019 rather than replaced. Twelve rooms spread over four floors, reached by the original chestnut staircase; there is no elevator, which guests either forgive or come for. Rooms are simple and comfortable — air conditioning, good beds, in-room safes — and breakfast with warm pastéis de nata is included. Castelo de São Jorge is an eight-minute uphill walk; Martim Moniz square and its metro station are four minutes downhill. The desk is staffed 08:00–23:00, and an AI night receptionist handles calls and self check-in through the night.",
+    "policies": {
+      "check_in_from": "15:00",
+      "check_in_until": "23:00 at the staffed desk; self check-in with an SMS door code is available 23:00–06:00",
+      "check_out_until": "11:00",
+      "cancellation": "Free cancellation until 18:00 Lisbon time on the day of arrival; after that, and for no-shows, the first night is charged to the card on file.",
+      "pets": "Small dogs up to 8 kg are welcome in the two ground-floor Pátio Twin rooms only, at 15 EUR per pet per night; advance notice required. Pets are not permitted on the upper floors.",
+      "smoking": "Non-smoking throughout the house; smoking is permitted in the rear courtyard. A 100 EUR deep-cleaning fee applies to smoking indoors.",
+      "payment_methods": "Visa, Mastercard, American Express, Maestro and euro cash. A valid card is required to guarantee every booking; the balance is settled at check-out.",
+      "late_arrival_notes": "The desk is staffed 08:00–23:00. For arrivals between 23:00 and 06:00 — including bookings made at 2 a.m. — the AI night receptionist confirms the reservation against the card guarantee, then sends a one-time street-door code plus a key-safe code by SMS and email. The room key waits in the lit key box beside reception, and a duty manager is on call if a code fails."
+    },
+    "amenities": [
+      "Original 18th-century azulejo interiors",
+      "Breakfast included (08:00–10:30), warm pastéis de nata",
+      "Free fibre Wi-Fi (~300 Mbps)",
+      "Air conditioning in all rooms",
+      "In-room electronic safes",
+      "Rear courtyard terrace",
+      "Honesty bar",
+      "Free luggage storage",
+      "Daily housekeeping",
+      "Same-day laundry service on weekdays",
+      "Multilingual front desk 08:00–23:00",
+      "Walking-tour maps and fado-night recommendations"
+    ],
+    "persona": {
+      "style": "warm, erudite, unhurried, gently old-fashioned",
+      "greeting": "Good evening, you've reached Casa dos Azulejos in Lisbon's Mouraria — I'm the inn's AI night receptionist, and I'd be glad to help with a booking or a question.",
+      "speech_quirks": "Speaks in measured, complete sentences and likes to anchor answers with a date or a street name. Permits herself at most one short tile anecdote per call — usually prefaced with 'if you'll forgive a moment of history' — then returns briskly to practical matters.",
+      "escalation_line": "That's one for our morning colleagues, I'm afraid — I'll leave them a careful note with your name and number, and someone will ring you back after the desk opens at 08:00."
+    },
+    "room_types": [
+      {
+        "code": "patio_twin",
+        "name": "Pátio Twin",
+        "description": "Ground-floor twin room opening onto the rear courtyard, with a small original tile frieze above the beds. The only category with step-free access and the only one where small dogs are allowed.",
+        "capacity": 2,
+        "base_rate_eur": 85,
+        "total_units": 3,
+        "features": [
+          "Two single beds",
+          "Ground floor, step-free from street (one shallow threshold)",
+          "Courtyard access",
+          "Air conditioning",
+          "Rain shower",
+          "Pet-friendly (up to 8 kg, 15 EUR/night)"
+        ]
+      },
+      {
+        "code": "azulejo_double",
+        "name": "Classic Azulejo Double",
+        "description": "Double room on the first or second floor with a restored 18th-century azulejo panel on one wall, wooden floors and a queen bed. Reached by the original staircase.",
+        "capacity": 2,
+        "base_rate_eur": 96,
+        "total_units": 5,
+        "features": [
+          "Queen bed",
+          "Original azulejo wall panel",
+          "Air conditioning",
+          "In-room safe",
+          "Walk-in shower",
+          "Street or courtyard view"
+        ]
+      },
+      {
+        "code": "balcony_superior",
+        "name": "Superior Balcony Double",
+        "description": "Larger third-floor double with a narrow wrought-iron balcony over Rua do Capelão and a writing desk under the eaves. A folding bed for a third guest can be added for 20 EUR per night.",
+        "capacity": 3,
+        "base_rate_eur": 118,
+        "total_units": 3,
+        "features": [
+          "Queen bed plus optional folding bed (+20 EUR/night)",
+          "Balcony over Rua do Capelão",
+          "Air conditioning",
+          "In-room safe",
+          "Bathtub with shower",
+          "Top of the staircase — 54 steps"
+        ]
+      },
+      {
+        "code": "severa_family",
+        "name": "Severa Family Suite",
+        "description": "The former merchant's parlour on the second floor, named for the fadista Maria Severa who lived on this street: one queen bedroom plus a sitting room with two single daybeds, and the house's finest tile panel.",
+        "capacity": 4,
+        "base_rate_eur": 130,
+        "total_units": 1,
+        "features": [
+          "Separate bedroom and sitting room",
+          "Sleeps 2 adults + 2 children or 4 adults",
+          "Signature 1740s azulejo hunting-scene panel",
+          "Air conditioning",
+          "Two windows over the street",
+          "In-room safe"
+        ]
+      }
+    ],
+    "occupancy_profile": "scarce_tonight",
+    "facts": [
+      {
+        "topic": "check_in",
+        "question": "What time can I check in?",
+        "answer": "Check-in is from 15:00, and the desk is staffed until 23:00. If you arrive earlier we'll store your luggage for free and you can explore Mouraria while the room is readied."
+      },
+      {
+        "topic": "early_check_in",
+        "question": "Can I check in before 15:00?",
+        "answer": "If your room is ready earlier we'll hand over the key at no charge. A guaranteed early check-in from 10:00 can be booked the day before for 25 EUR, subject to availability."
+      },
+      {
+        "topic": "check_out",
+        "question": "What time is check-out?",
+        "answer": "Check-out is by 11:00. Late check-out until 13:00 costs 20 EUR when availability allows, and you can leave bags with us free of charge afterwards."
+      },
+      {
+        "topic": "late_arrival",
+        "question": "I land late — can I check in at 2 in the morning?",
+        "answer": "Yes. Between 23:00 and 06:00 our AI night receptionist confirms your booking against the card guarantee, then texts and emails you a one-time street-door code and a key-safe code; your room key waits in the lit key box beside reception. A duty manager is on call if a code gives you any trouble."
+      },
+      {
+        "topic": "parking",
+        "question": "Do you have parking?",
+        "answer": "We have no parking of our own — the lanes around the house are pedestrian-only. The nearest garage is the underground car park at Praça Martim Moniz, a four-minute walk, at roughly 21 EUR per 24 hours."
+      },
+      {
+        "topic": "breakfast",
+        "question": "Is breakfast included?",
+        "answer": "Yes, breakfast is included in all rates and served 08:00–10:30 in the tiled breakfast room: warm pastéis de nata, fruit, cheese, ham, eggs and proper coffee."
+      },
+      {
+        "topic": "pets",
+        "question": "Can I bring my dog?",
+        "answer": "Small dogs up to 8 kg are welcome in our two ground-floor Pátio Twin rooms only, at 15 EUR per night, with advance notice. The upper floors and their old tile panels stay pet-free."
+      },
+      {
+        "topic": "wifi",
+        "question": "Is there Wi-Fi?",
+        "answer": "Free fibre Wi-Fi runs through the whole house at around 300 Mbps. The network is CasaAzulejos and the password is printed on your key-card sleeve."
+      },
+      {
+        "topic": "accessibility",
+        "question": "Is the hotel accessible for guests with limited mobility?",
+        "answer": "Honestly, only partly: the house is a 1742 townhouse with four floors, the original creaky wooden staircase and no elevator. Our three ground-floor Pátio Twins have step-free access apart from one shallow threshold at the front door, but the bathrooms are not fully adapted."
+      },
+      {
+        "topic": "payment",
+        "question": "How can I pay?",
+        "answer": "We take Visa, Mastercard, American Express, Maestro and euro cash. A card guarantees the booking and the balance is settled at check-out."
+      },
+      {
+        "topic": "cancellation",
+        "question": "What is your cancellation policy?",
+        "answer": "Cancellation is free until 18:00 Lisbon time on the day of arrival. After that, or if you don't show, the first night is charged to the card on file."
+      },
+      {
+        "topic": "airport_transport",
+        "question": "How do I get there from the airport?",
+        "answer": "A taxi or Uber from Humberto Delgado Airport takes about 15 minutes at night and costs 12–16 EUR. By day, the green metro line reaches Martim Moniz (06:30–01:00), and we're a four-minute walk uphill from there."
+      },
+      {
+        "topic": "luggage_storage",
+        "question": "Can you store our luggage?",
+        "answer": "Yes, free of charge in a locked room behind reception, both before check-in and after check-out until your evening departure."
+      },
+      {
+        "topic": "smoking",
+        "question": "Can I smoke in the room?",
+        "answer": "The house is entirely non-smoking — partly to protect the old tiles and timber — but you may smoke in the rear courtyard. Smoking indoors carries a 100 EUR deep-cleaning fee."
+      },
+      {
+        "topic": "children_extra_bed",
+        "question": "Do you accommodate children, and is there an extra bed?",
+        "answer": "Children are very welcome. A cot is free for under-2s, a folding bed costs 20 EUR per night and fits the Superior Balcony Doubles, and the Severa Family Suite sleeps four with its own sitting room."
+      },
+      {
+        "topic": "air_conditioning",
+        "question": "Do the rooms have air conditioning?",
+        "answer": "Yes, every room has individually controlled air conditioning — discreet units, fitted carefully so as not to disturb the tile panels — and they provide heating in winter."
+      },
+      {
+        "topic": "pool_gym_spa",
+        "question": "Is there a pool, gym or spa?",
+        "answer": "No — at 12 rooms we're too small for any of those. We offer the courtyard terrace and the honesty bar instead, and the climb to the castle counts as the gym."
+      },
+      {
+        "topic": "neighborhood",
+        "question": "What is the neighborhood like?",
+        "answer": "Mouraria is old, steep and lively — the birthplace of fado. Castelo de São Jorge is an eight-minute walk uphill, Martim Moniz square and metro four minutes downhill, and small tascas line Rua dos Cavaleiros nearby."
+      },
+      {
+        "topic": "noise",
+        "question": "Is it noisy at night?",
+        "answer": "The street is generally quiet by 23:00, though during the Santos Populares festivities in June the whole quarter celebrates late. Courtyard-facing rooms are the quietest, and there are free earplugs at the desk."
+      },
+      {
+        "topic": "room_safe",
+        "question": "Is there a safe in the room?",
+        "answer": "Yes, every room has a free laptop-sized electronic safe in the wardrobe."
+      },
+      {
+        "topic": "laundry",
+        "question": "Do you have a laundry service?",
+        "answer": "We offer same-day laundry on weekdays if you leave items at the desk before 09:00, priced per piece — a shirt is 4 EUR. There's also a self-service laundromat three minutes away on Rua dos Cavaleiros."
+      },
+      {
+        "topic": "taxes_fees",
+        "question": "Are taxes included, and is there a city tax?",
+        "answer": "VAT is included in our rates. Lisbon charges a municipal tourist tax of 4 EUR per person per night, capped at 7 nights, with children under 13 exempt; we collect it at check-out."
+      },
+      {
+        "topic": "azulejos",
+        "question": "Can we see the famous tiles?",
+        "answer": "Of course — the stairwell, breakfast room and several bedrooms keep their original 1740s blue-and-white panels. If you'll forgive a moment of history: the finest one, a hunting scene in the Severa Suite, was plastered over for a century and only rediscovered during the 2019 restoration."
+      },
+      {
+        "topic": "building_history",
+        "question": "How old is the building?",
+        "answer": "The house was built in 1742 for a tile merchant who used the ground floor as his showroom — which is why a modest townhouse has such fine azulejos. It has been an inn since 1987."
+      },
+      {
+        "topic": "stairs",
+        "question": "I read the stairs creak — is that true?",
+        "answer": "Cheerfully true: the chestnut staircase is original to 1742 and announces every guest. There's no elevator, so we observe quiet hours after 22:00 and our staff will happily carry your bags up — between 08:00 and 23:00, that is."
+      },
+      {
+        "topic": "fado",
+        "question": "Where can we hear fado nearby?",
+        "answer": "You're on the right street — Maria Severa, fado's first great voice, lived on Rua do Capelão, and our family suite is named for her. The desk keeps a list of small fado houses within five minutes' walk, with sets usually starting around 21:00."
+      }
+    ]
+  },
+  {
+    "slug": "atlantico-business-hotel",
+    "name": "Atlântico Business Hotel",
+    "archetype": "corporate business hotel near the convention center",
+    "neighborhood": "Parque das Nações",
+    "address": "Avenida Dom João II 184, 1990-083 Lisboa, Portugal",
+    "stars": 4,
+    "short_description": "Functional four-star business hotel beside the FIL convention centre in Parque das Nações, with 24-hour reception, six meeting rooms and gigabit Wi-Fi.",
+    "long_description": "Atlântico Business Hotel is a 104-room, four-star property on Avenida Dom João II in Parque das Nações, 400 metres from the FIL exhibition centre and a six-minute walk from Oriente station. Built around the working traveller, it offers six meeting rooms, a 24-hour front desk and business corner, gigabit fibre Wi-Fi and same-day laundry. Rooms are quiet and functional, with proper desks, blackout curtains and double glazing; floors six to nine face the Tagus. Lisbon Airport is ten minutes away by taxi, or one metro stop plus a short walk.",
+    "policies": {
+      "check_in_from": "15:00",
+      "check_in_until": "No cutoff — front desk staffed 24 hours",
+      "check_out_until": "12:00",
+      "cancellation": "Free cancellation until 14:00 on the day of arrival; after that, or for a no-show, the first night is charged to the card on file.",
+      "pets": "Not accepted; certified assistance dogs are the exception and stay free of charge.",
+      "smoking": "Non-smoking throughout; a EUR 150 deep-cleaning fee applies to rooms. Smoking is permitted only on the ground-floor terrace by the lobby bar.",
+      "payment_methods": "Visa, Mastercard, American Express, debit cards, Apple Pay, Google Pay and euro cash; corporate invoicing available with a prior billing agreement.",
+      "late_arrival_notes": "The front desk is staffed 24 hours, so arrivals between 00:00 and 06:00 check in normally at reception — no door code or night porter arrangement is needed. Bookings made by phone during the night are confirmed immediately against a payment card and the room is held until arrival, however late."
+    },
+    "amenities": [
+      "24-hour front desk",
+      "six meeting rooms with 4K AV and video-conferencing",
+      "24-hour business corner with PCs and printer",
+      "fitness room (06:00-23:00)",
+      "Tejo restaurant and lobby bar",
+      "24-hour room service",
+      "underground parking with EV charging",
+      "free gigabit fibre Wi-Fi",
+      "express same-day laundry",
+      "free 24-hour luggage storage",
+      "express check-out kiosks",
+      "step-free access and four accessible rooms"
+    ],
+    "persona": {
+      "style": "brisk, precise, efficient, no-nonsense",
+      "greeting": "Good evening, Atlântico Business Hotel — I'm the hotel's AI receptionist on the 24-hour line; what can I do for you?",
+      "speech_quirks": "Speaks quickly in short, clipped sentences with zero small talk, and reads every detail back for confirmation — 'Two nights, arriving the 14th, Executive King. Correct?' Favours exact figures and times over approximations and closes most answers with a flat 'Anything else?'",
+      "escalation_line": "That's outside what I can settle on this line — I'm logging it now for the duty manager, who starts at 07:00; you'll have an answer before 09:00."
+    },
+    "room_types": [
+      {
+        "code": "standard_double",
+        "name": "Standard Double",
+        "description": "Compact, quiet 20 m² room geared to the solo business traveller, facing Avenida Dom João II on the city side.",
+        "capacity": 2,
+        "base_rate_eur": 115,
+        "total_units": 40,
+        "features": [
+          "queen bed (160 cm)",
+          "work desk with USB-C charging",
+          "individually controlled air conditioning",
+          "55-inch smart TV",
+          "blackout curtains",
+          "laptop-sized safe"
+        ]
+      },
+      {
+        "code": "superior_twin",
+        "name": "Superior Twin",
+        "description": "24 m² room with two joinable single beds, suited to colleagues sharing during trade fairs.",
+        "capacity": 2,
+        "base_rate_eur": 130,
+        "total_units": 32,
+        "features": [
+          "two single beds (90 cm, joinable)",
+          "espresso machine",
+          "work desk with task lighting",
+          "walk-in shower",
+          "double-glazed windows",
+          "fits one folding extra bed"
+        ]
+      },
+      {
+        "code": "executive_king",
+        "name": "Executive King",
+        "description": "28 m² room on floors 7-9 with Tagus river views and late check-out until 14:00 included.",
+        "capacity": 2,
+        "base_rate_eur": 150,
+        "total_units": 24,
+        "features": [
+          "king bed (180 cm)",
+          "river view, floors 7-9",
+          "wired ethernet plus Wi-Fi 6",
+          "Nespresso machine",
+          "bathrobe and slippers",
+          "late check-out until 14:00 included"
+        ]
+      },
+      {
+        "code": "business_suite",
+        "name": "Business Suite",
+        "description": "45 m² river-view suite with a separate sitting room and six-seat meeting table — a working office that sleeps three.",
+        "capacity": 3,
+        "base_rate_eur": 170,
+        "total_units": 8,
+        "features": [
+          "separate sitting room with six-seat meeting table",
+          "king bed (180 cm)",
+          "sofa bed for a third guest",
+          "river view",
+          "wired ethernet plus Wi-Fi 6",
+          "complimentary soft-drink minibar"
+        ]
+      }
+    ],
+    "occupancy_profile": "available",
+    "facts": [
+      {
+        "topic": "check_in",
+        "question": "What time can I check in?",
+        "answer": "Check-in opens at 15:00. The front desk is staffed 24 hours, so there is no cutoff — arrive whenever your day allows."
+      },
+      {
+        "topic": "check_out",
+        "question": "When do I have to check out?",
+        "answer": "Check-out is by 12:00. Use the lobby express kiosk or simply drop your key card; the invoice is emailed automatically. Executive King guests have late check-out until 14:00 included."
+      },
+      {
+        "topic": "late_arrival",
+        "question": "I land late — can I check in at 2 or 3 in the morning?",
+        "answer": "Yes. Reception is staffed around the clock, so you check in normally at the desk at any hour. Your room is held all night against the card on the booking."
+      },
+      {
+        "topic": "early_check_in",
+        "question": "Can I check in before 15:00?",
+        "answer": "Early check-in from 11:00 costs EUR 30, subject to availability; to guarantee it, book the previous night. Luggage storage is free if your room isn't ready."
+      },
+      {
+        "topic": "parking",
+        "question": "Do you have parking?",
+        "answer": "Yes, an underground garage on site: EUR 18 per night, no reservation needed, entrance on Rua do Bojador, height limit 1.90 m. Two 22 kW EV chargers at EUR 0.35 per kWh."
+      },
+      {
+        "topic": "breakfast",
+        "question": "What time is breakfast and how much does it cost?",
+        "answer": "Buffet breakfast in the Tejo restaurant runs 06:30-10:30 on weekdays and 07:00-11:00 on weekends; EUR 16 per person, or EUR 12 when added to the booking. Grab-and-go bags are ready from 05:00 if requested the night before."
+      },
+      {
+        "topic": "pets",
+        "question": "Can I bring my dog?",
+        "answer": "No pets, I'm afraid; certified assistance dogs are the exception and stay free."
+      },
+      {
+        "topic": "wifi",
+        "question": "Is there Wi-Fi?",
+        "answer": "Free gigabit fibre Wi-Fi throughout — network 'Atlantico_Guest', no password. Executive rooms, suites and all meeting rooms also have wired ethernet."
+      },
+      {
+        "topic": "accessibility",
+        "question": "Do you have accessible rooms?",
+        "answer": "Yes — four rooms with roll-in showers and grab rails, a step-free entrance on Avenida Dom João II, and lifts to every floor. Mention it when booking and we block one near the lift."
+      },
+      {
+        "topic": "payment",
+        "question": "How can I pay?",
+        "answer": "Visa, Mastercard, American Express, debit cards, Apple Pay, Google Pay or euro cash. Corporate accounts can be invoiced with a prior billing agreement."
+      },
+      {
+        "topic": "cancellation",
+        "question": "What is the cancellation policy?",
+        "answer": "Free cancellation until 14:00 on the day of arrival. After that, or for a no-show, the first night is charged to the card on file."
+      },
+      {
+        "topic": "airport_transport",
+        "question": "How do I get to the hotel from the airport?",
+        "answer": "Ten minutes by taxi, roughly EUR 10-12, or one stop on the red metro line from Aeroporto to Oriente and a six-minute walk. The desk orders taxis at any hour."
+      },
+      {
+        "topic": "luggage_storage",
+        "question": "Can you store my luggage?",
+        "answer": "Yes — the locked luggage room at reception is free and available 24 hours, both before check-in and after check-out."
+      },
+      {
+        "topic": "smoking",
+        "question": "Can I smoke in the room?",
+        "answer": "No — the building is entirely non-smoking and a EUR 150 cleaning fee applies. The terrace by the lobby bar is the designated smoking area."
+      },
+      {
+        "topic": "children_extra_bed",
+        "question": "Can my child stay with us, and do you have extra beds?",
+        "answer": "Children up to 6 sleep free in existing beds; a folding bed is EUR 25 per night and fits the Superior Twin and Executive King. Cots are free — request one at booking."
+      },
+      {
+        "topic": "air_conditioning",
+        "question": "Do the rooms have air conditioning?",
+        "answer": "Yes, every room has individually controlled air conditioning with both cooling and heating, available year-round."
+      },
+      {
+        "topic": "pool_gym_spa",
+        "question": "Is there a pool, gym or spa?",
+        "answer": "No pool or spa. The fitness room on level -1 is free for guests and open 06:00-23:00, with cardio machines, free weights and water."
+      },
+      {
+        "topic": "neighborhood",
+        "question": "What is around the hotel?",
+        "answer": "We're in Parque das Nações: 400 m from the FIL exhibition centre, 600 m from Altice Arena, and ten minutes on foot to the river promenade, the Oceanário and the Vasco da Gama shopping centre."
+      },
+      {
+        "topic": "noise",
+        "question": "Is the hotel quiet?",
+        "answer": "All rooms have double glazing and the avenue quiets down after 22:00. During big trade fairs, ask for floors 6-9 on the river side — they are the quietest."
+      },
+      {
+        "topic": "room_safe",
+        "question": "Is there a safe in the room?",
+        "answer": "Yes, a free laptop-sized electronic safe in every room. Reception holds larger valuables in the main safe on request."
+      },
+      {
+        "topic": "laundry",
+        "question": "Do you have a laundry service?",
+        "answer": "Express same-day laundry: bag in by 09:00, returned by 19:00. A shirt is EUR 4.50, a suit EUR 12. There are no self-service machines."
+      },
+      {
+        "topic": "taxes_fees",
+        "question": "Are taxes included in the room rate?",
+        "answer": "VAT is included in all quoted rates. Lisbon's city tax of EUR 4 per adult per night, capped at seven nights, is added at check-out."
+      },
+      {
+        "topic": "meeting_rooms",
+        "question": "Do you have meeting rooms?",
+        "answer": "Six rooms for 4 to 120 people with 4K displays and video-conferencing, from EUR 90 per half day. The 24-hour business corner in the lobby has two PCs and a printer for boarding passes and documents."
+      },
+      {
+        "topic": "corporate_invoicing",
+        "question": "Can I get an invoice with my company's VAT number?",
+        "answer": "Yes — give the company name and VAT number at check-in and the invoice is issued automatically at check-out, printed or by email. Recurring corporate guests can set up monthly consolidated billing."
+      },
+      {
+        "topic": "night_booking",
+        "question": "Can I book a room right now, in the middle of the night?",
+        "answer": "Yes. This line and the front desk run 24 hours: I confirm the room immediately against a payment card and you can check in the moment you arrive."
+      }
+    ]
+  },
+  {
+    "slug": "the-lighthouse-hostel",
+    "name": "The Lighthouse Hostel",
+    "archetype": "social party hostel with dorms and a rooftop bar",
+    "neighborhood": "Cais do Sodré",
+    "address": "Rua de São Paulo 187, 1200-427 Lisboa, Portugal",
+    "stars": 1,
+    "short_description": "Social hostel one block off Pink Street in Cais do Sodré, with curtained bunk dorms, a few private doubles, and The Lantern rooftop bar overlooking the Tejo. Built for meeting people, not for early nights.",
+    "long_description": "The Lighthouse Hostel sits in a converted 18th-century townhouse on Rua de São Paulo, one block from Pink Street and two minutes from the Time Out Market. Downstairs there's a café and a common room with foosball and a PS5; upstairs, four floors of custom wooden bunks with privacy curtains, reading lights and lockers, plus five private doubles for guests who want a door of their own. The top floor opens onto The Lantern, our rooftop bar, which runs daily until 02:00 with happy hour from 18:00 and a view across the river. We run free walking tours most mornings and pub crawls three nights a week. Reception is staffed until midnight, after which our AI night receptionist handles arrivals by SMS door code, so a 2 AM check-in is genuinely no problem. Strictly 18+, honest about the noise, and proud of both.",
+    "policies": {
+      "check_in_from": "15:00",
+      "check_in_until": "23:59",
+      "check_out_until": "11:00",
+      "cancellation": "Free cancellation until 14:00 (Lisbon time) on the day before arrival; after that, or for no-shows, the first night is charged to the card on file.",
+      "pets": "No pets allowed in dorms or private rooms; certified assistance dogs are the only exception.",
+      "smoking": "Non-smoking throughout the building; smoking is allowed only in the marked corner of the rooftop terrace. Smoking in a room incurs a EUR 100 cleaning charge.",
+      "payment_methods": "Visa, Mastercard, Amex, Maestro, Apple Pay and Google Pay; cash in euros accepted at the desk. A valid card is required to guarantee every booking.",
+      "late_arrival_notes": "Reception is staffed 08:00-24:00. For arrivals between 00:00 and 06:00, the AI night receptionist confirms the booking over the phone and sends a one-time street-door code, the bed or room number, and the locker code by SMS; guests let themselves in and complete passport registration at the desk the next morning. On Thursday-Saturday nights, bar security can also open the door until 02:30."
+    },
+    "amenities": [
+      "Rooftop bar (The Lantern, open until 02:00)",
+      "Free WiFi, ~300 Mbps throughout",
+      "Communal guest kitchen",
+      "Common room with foosball and PS5",
+      "Air conditioning in all dorms and rooms",
+      "Personal lockers at every dorm bed",
+      "Self-service laundry (EUR 4 wash / EUR 3 dry)",
+      "Free luggage storage on arrival and departure days",
+      "24/7 self check-in via SMS door code",
+      "Free daily walking tour and pub crawls 3x weekly",
+      "Linen included; towel rental EUR 2",
+      "Ground-floor café serving breakfast 08:00-11:00",
+      "Free earplugs at the desk"
+    ],
+    "persona": {
+      "style": "laid-back, friendly, upbeat, casual, reassuring",
+      "greeting": "Hey, you've reached The Lighthouse Hostel in Cais do Sodré — I'm the hostel's AI night receptionist holding down the desk, what can I do for you?",
+      "speech_quirks": "Relaxed pace, short sentences, light slang — 'no worries', 'sweet', 'you're all sorted'. Occasionally calls guests 'mate', but always repeats names, dates and prices back clearly to confirm before booking anything.",
+      "escalation_line": "Ah, that one's a bit above my pay grade, mate — I'll leave a note for the morning crew and someone will get back to you after 08:00, no worries."
+    },
+    "room_types": [
+      {
+        "code": "dorm_8_mixed",
+        "name": "8-Bed Mixed Dorm",
+        "description": "Our biggest and cheapest dorm: custom wooden bunks with privacy curtains in a high-ceilinged room on the first and second floors. Shared bathrooms are on the same corridor. Social by design — expect to make friends.",
+        "capacity": 1,
+        "base_rate_eur": 28,
+        "total_units": 24,
+        "features": [
+          "Custom bunk with privacy curtain",
+          "Individual reading light and USB socket",
+          "Personal locker (padlock EUR 3 at desk)",
+          "Air conditioning",
+          "Shared bathrooms on the corridor",
+          "Linen included"
+        ]
+      },
+      {
+        "code": "dorm_6_female",
+        "name": "6-Bed Female Dorm",
+        "description": "Female-only dorm on the third floor with its own ensuite bathroom, slightly removed from the staircase traffic. Same curtained bunks, a bit more calm.",
+        "capacity": 1,
+        "base_rate_eur": 32,
+        "total_units": 12,
+        "features": [
+          "Female-only",
+          "Ensuite bathroom",
+          "Privacy curtains on every bunk",
+          "Personal locker",
+          "Air conditioning",
+          "Hairdryer and full-length mirror"
+        ]
+      },
+      {
+        "code": "dorm_4_mixed",
+        "name": "4-Bed Dorm",
+        "description": "Small mixed dorm on the quieter top floor, one flight below the rooftop, with an ensuite bathroom. The pick if you want the dorm price without the eight-roommate lottery.",
+        "capacity": 1,
+        "base_rate_eur": 38,
+        "total_units": 8,
+        "features": [
+          "Only 4 beds",
+          "Top-floor location",
+          "Ensuite bathroom",
+          "Privacy curtains and lockers",
+          "Air conditioning"
+        ]
+      },
+      {
+        "code": "private_double",
+        "name": "Private Double",
+        "description": "Five compact private rooms with a proper double bed and ensuite shower — a door of your own with the hostel's social life one staircase away. Two face Rua de São Paulo, three face the quieter inner courtyard.",
+        "capacity": 2,
+        "base_rate_eur": 78,
+        "total_units": 5,
+        "features": [
+          "Double bed",
+          "Ensuite shower room",
+          "Air conditioning",
+          "Towels included",
+          "Lockable drawer",
+          "Courtyard-facing rooms available on request"
+        ]
+      }
+    ],
+    "occupancy_profile": "available",
+    "facts": [
+      {
+        "topic": "check_in",
+        "question": "What time can I check in?",
+        "answer": "Check-in starts at 15:00 at the front desk on Rua de São Paulo. If you land earlier, we'll store your bags for free and you can hang out in the common room or up on the rooftop."
+      },
+      {
+        "topic": "check_out",
+        "question": "When is check-out?",
+        "answer": "Check-out is by 11:00 — just drop your key card at the desk. Late check-out until 13:00 is EUR 10 if your bed isn't booked that night."
+      },
+      {
+        "topic": "late_arrival",
+        "question": "I arrive at 2 AM — can I still check in?",
+        "answer": "No stress. Reception is staffed until midnight, and between 00:00 and 06:00 the AI night receptionist texts you a one-time street-door code by SMS, along with your bed number and locker code. You let yourself in and finish passport registration at the desk in the morning."
+      },
+      {
+        "topic": "parking",
+        "question": "Do you have parking?",
+        "answer": "No parking at the hostel. The nearest garage is the EMEL car park at Praça Duque da Terceira, about 3 minutes on foot, roughly EUR 15 per 24 hours — honestly, you don't want a car in this neighbourhood."
+      },
+      {
+        "topic": "breakfast",
+        "question": "Is breakfast included?",
+        "answer": "Breakfast isn't included in the bed price. The ground-floor café serves it 08:00-11:00 for EUR 6 — pastries, eggs, fruit and bottomless coffee."
+      },
+      {
+        "topic": "pets",
+        "question": "Can I bring my dog?",
+        "answer": "Sorry, no pets — dorm life and dogs don't mix. Certified assistance dogs are the only exception."
+      },
+      {
+        "topic": "wifi",
+        "question": "Do you have WiFi?",
+        "answer": "Free WiFi everywhere including the rooftop, around 300 Mbps. The network is LIGHTHOUSE-GUEST and the password is printed on your key card sleeve."
+      },
+      {
+        "topic": "accessibility",
+        "question": "Is the hostel wheelchair accessible?",
+        "answer": "Straight answer: no. We're in an 18th-century building with a narrow staircase and no lift, so dorms and rooms aren't wheelchair accessible. Only the ground-floor café is step-free."
+      },
+      {
+        "topic": "payment",
+        "question": "What payment methods do you accept?",
+        "answer": "Visa, Mastercard, Amex, Maestro, Apple Pay and Google Pay, plus cash in euros at the desk. We need a valid card to hold any booking."
+      },
+      {
+        "topic": "cancellation",
+        "question": "What's your cancellation policy?",
+        "answer": "Free cancellation until 14:00 Lisbon time on the day before you arrive. After that, or if you don't show up, we charge the first night to the card on file."
+      },
+      {
+        "topic": "airport_transport",
+        "question": "How do I get there from the airport?",
+        "answer": "Metro red line from the airport to Alameda, switch to the green line and ride to Cais do Sodré — about 35 minutes, EUR 1.85. A taxi or Uber runs EUR 15-20 and takes around 20 minutes at night."
+      },
+      {
+        "topic": "luggage_storage",
+        "question": "Can you store my luggage?",
+        "answer": "Yep — free luggage storage in our locked storage room on your arrival and departure days. Outside those days it's EUR 5 per bag per day."
+      },
+      {
+        "topic": "smoking",
+        "question": "Can I smoke at the hostel?",
+        "answer": "Indoors, no — the whole building is non-smoking. There's a smoking corner on the rooftop terrace. Smoking in a room means a EUR 100 cleaning charge, and yes, we do actually charge it."
+      },
+      {
+        "topic": "children_extra_bed",
+        "question": "Can I bring my kids, or get an extra bed?",
+        "answer": "We're strictly 18+, even in the private rooms — between the rooftop bar and the dorm vibe, it's no place for kids. No extra beds or cots available."
+      },
+      {
+        "topic": "air_conditioning",
+        "question": "Do the rooms have air conditioning?",
+        "answer": "Every dorm and private room has air conditioning — individually controlled in the privates, set per-room in the dorms. It earns its keep in August."
+      },
+      {
+        "topic": "pool_gym_spa",
+        "question": "Is there a pool, gym or spa?",
+        "answer": "None of the above — we're a hostel, not a resort. The rooftop bar with the river view is our version of a spa."
+      },
+      {
+        "topic": "neighborhood",
+        "question": "What's the area like?",
+        "answer": "We're on Rua de São Paulo in Cais do Sodré, one block from Pink Street and two minutes from the Time Out Market. The riverfront and the Cascais train station are a 4-minute walk."
+      },
+      {
+        "topic": "noise",
+        "question": "Is it noisy at night?",
+        "answer": "Honest answer: yes, sometimes. We're a social hostel near a nightlife street and our rooftop bar runs until 02:00. Quiet hours in the dorm corridors start at 23:00 and we hand out free earplugs at the desk — but if you want silence, we're probably not your spot."
+      },
+      {
+        "topic": "room_safe",
+        "question": "Is there a safe in the room?",
+        "answer": "No in-room safes, but every dorm bed has a personal locker big enough for a carry-on — bring a padlock or buy one at the desk for EUR 3. Private rooms have a lockable drawer instead."
+      },
+      {
+        "topic": "laundry",
+        "question": "Can I do laundry?",
+        "answer": "Self-service washer and dryer in the basement: EUR 4 to wash, EUR 3 to dry, detergent included. It's usually free of queues after midnight."
+      },
+      {
+        "topic": "early_check_in",
+        "question": "Can I check in early?",
+        "answer": "Beds are guaranteed from 15:00. Arrive earlier and we'll store your luggage for free — and if your bed happens to be ready, we'll check you in early at no charge. Pot luck, but it happens a lot midweek."
+      },
+      {
+        "topic": "taxes_fees",
+        "question": "Are there any extra taxes or fees?",
+        "answer": "Lisbon city tax is EUR 4 per person per night, capped at 7 nights, paid at the hostel — it's not included in the bed price. VAT is already included in the rates."
+      },
+      {
+        "topic": "rooftop_bar",
+        "question": "Tell me about the rooftop bar.",
+        "answer": "The Lantern is open daily 17:00-02:00 with views over the Tejo. Happy hour is 18:00-20:00 — EUR 2.50 imperial beers and EUR 5 sangria jugs — and every guest gets a free welcome shot on arrival."
+      },
+      {
+        "topic": "social_events",
+        "question": "Do you organise any events or tours?",
+        "answer": "Free walking tour most mornings at 11:00 from the lobby, and a pub crawl down Pink Street on Tuesdays, Thursdays and Saturdays at 22:00 — EUR 15 for four venues plus club entry."
+      },
+      {
+        "topic": "age_policy",
+        "question": "Is there a minimum age to stay?",
+        "answer": "Yes — everyone must be 18 or older, no exceptions, including in private rooms. Bring a passport or EU ID card for check-in; we register all guests as required by Portuguese law."
+      }
+    ]
+  },
+  {
+    "slug": "convento-de-sao-vicente",
+    "name": "Convento de São Vicente Hotel",
+    "archetype": "five-star converted 16th-century convent with cloister spa",
+    "neighborhood": "Graça",
+    "address": "Calçada da Graça 38, 1170-165 Lisboa, Portugal",
+    "stars": 5,
+    "short_description": "A 1582 Augustinian convent in the hilltop quarter of Graça, reborn as a 34-room five-star retreat whose spa fills the original cloister — metre-thick stone walls, vaulted ceilings, and a hush the sisters would recognise.",
+    "long_description": "The Convento de São Vicente was founded in 1582 by Augustinian sisters and remained a working convent for over three centuries. Converted with archaeological care in 2019, it now holds just 34 rooms arranged around the original cloister, whose arcade shelters a heated hydrotherapy pool, sauna, steam room and four treatment rooms. The former refectory — its azulejo panels dated 1680 — serves breakfast and dinner; the old chapel houses an honesty bar pouring wine from convent estates. Rooms keep the proportions of the building: vaulted ceilings, deep window seats cut into stone, linen in shades of bone and ash. Upper rooms look across red rooftops to the Tagus; cloister-facing rooms look onto orange trees and the sound of the fountain. Each evening at 19:00 a small bell rings the start of quiet hour. Graça's miradouro is two minutes' walk; tram 28 stops 150 metres from the gatehouse, where a night porter keeps the door from 23:00 to 07:00.",
+    "policies": {
+      "check_in_from": "15:00",
+      "check_in_until": "00:00 at the gatehouse front desk; after midnight the night porter handles arrivals (see late arrival notes)",
+      "check_out_until": "12:00",
+      "cancellation": "Free cancellation until 18:00 (Lisbon time) two days before arrival; after that the first night including city tax is charged. No-shows are charged the first night.",
+      "pets": "Dogs up to 8 kg are welcome in Tagus Deluxe rooms only, for a 35 EUR per-stay cleaning fee; pets are not permitted in the cloister spa or the refectory.",
+      "smoking": "Entirely non-smoking indoors; smoking is permitted only on the upper choir terrace. A 200 EUR deep-cleaning fee applies to violations.",
+      "payment_methods": "Visa, Mastercard, American Express, Maestro debit, Apple Pay and Google Pay; euro cash accepted. A pre-authorisation of the first night is taken at booking.",
+      "late_arrival_notes": "A night porter is on duty at the gatehouse from 23:00 to 07:00 every night, so arrivals between midnight and 06:00 are always possible. Ring the brass bell at the main door on Calçada da Graça and the porter will check you in within a few minutes. For bookings made by phone overnight, the AI receptionist registers the arrival with the porter immediately and sends a confirmation SMS containing the gatehouse direct number."
+    },
+    "amenities": [
+      "Cloister spa with heated hydrotherapy pool",
+      "Sauna and steam room",
+      "Refectory restaurant with 1680 azulejo panels",
+      "Honesty bar in the former chapel",
+      "Upper choir terrace with Tagus views",
+      "24-hour fitness room",
+      "Free fibre Wi-Fi throughout",
+      "Valet parking (35 EUR/night)",
+      "Private airport transfers",
+      "Same-day laundry and pressing",
+      "Lift and two accessible rooms",
+      "Cloister garden open to all guests",
+      "In-room electronic safes",
+      "Concierge and 24-hour gatehouse"
+    ],
+    "persona": {
+      "style": "hushed, serene, precise, gently formal",
+      "greeting": "Good evening, you have reached the Convento de São Vicente Hotel in Graça — I am the hotel's AI night receptionist, and I would be glad to help you.",
+      "speech_quirks": "Speaks slowly and softly, with deliberate pauses, as though mindful of guests sleeping behind thick stone walls. Favours 'of course', 'allow me a brief moment', and closes confirmations with a quiet 'consider it arranged'.",
+      "escalation_line": "I'm afraid that is beyond what I may arrange at this hour. With your permission, I will leave a careful note for our morning team — they begin at seven — and they will telephone you first thing."
+    },
+    "room_types": [
+      {
+        "code": "cloister_double",
+        "name": "Cloister Double",
+        "description": "A former sister's quarters facing the cloister garden: vaulted stone ceiling, deep window seat over the orange trees, queen bed and a travertine bathroom with walk-in shower. The quietest rooms in the house.",
+        "capacity": 2,
+        "base_rate_eur": 240,
+        "total_units": 16,
+        "features": [
+          "cloister garden view",
+          "vaulted 16th-century ceiling",
+          "queen bed",
+          "walk-in rain shower",
+          "individually controlled air conditioning",
+          "electronic safe",
+          "two adapted units with roll-in showers"
+        ]
+      },
+      {
+        "code": "tagus_deluxe",
+        "name": "Tagus Deluxe",
+        "description": "Upper-floor rooms looking over Graça's red rooftops to the Tagus river, with a king bed, sitting corner in the old window embrasure, and a bathroom in local lioz stone. The only category where small dogs are permitted.",
+        "capacity": 2,
+        "base_rate_eur": 295,
+        "total_units": 12,
+        "features": [
+          "Tagus river and rooftop view",
+          "king bed",
+          "sitting corner",
+          "lioz stone bathroom with bathtub",
+          "extra bed possible (60 EUR)",
+          "small dogs permitted",
+          "air conditioning"
+        ]
+      },
+      {
+        "code": "abbess_suite",
+        "name": "Abbess Suite",
+        "description": "The former abbess's apartments: a separate sitting room beneath an original painted ceiling, king bedroom, freestanding bath set before the window, and a private corner of the choir terrace.",
+        "capacity": 3,
+        "base_rate_eur": 380,
+        "total_units": 6,
+        "features": [
+          "separate sitting room",
+          "original painted ceiling",
+          "freestanding bathtub",
+          "private terrace corner",
+          "king bed plus extra bed possible",
+          "Nespresso and tea service",
+          "priority spa booking"
+        ]
+      }
+    ],
+    "occupancy_profile": "scarce_tonight",
+    "facts": [
+      {
+        "topic": "check_in",
+        "question": "What time can I check in?",
+        "answer": "Check-in opens at 15:00. The gatehouse front desk is staffed until midnight, and a night porter takes over from 23:00 until 07:00, so someone is always at the door."
+      },
+      {
+        "topic": "check_out",
+        "question": "When is check-out?",
+        "answer": "Check-out is by 12:00. Late check-out until 15:00 can be arranged for 80 EUR, subject to availability."
+      },
+      {
+        "topic": "late_arrival",
+        "question": "I'll arrive around 2 in the morning — is that a problem?",
+        "answer": "Not at all — our night porter is on duty at the gatehouse from 23:00 to 07:00. Ring the brass bell at the main door on Calçada da Graça and you will be checked in within a few minutes; if you book by phone overnight, you'll receive an SMS with the gatehouse direct number."
+      },
+      {
+        "topic": "parking",
+        "question": "Do you have parking?",
+        "answer": "We offer valet parking for 35 EUR per night — the valet meets you at the entrance on Calçada da Graça. There is no self-parking, as Graça's streets are narrow and largely residents-only."
+      },
+      {
+        "topic": "breakfast",
+        "question": "What time is breakfast and is it included?",
+        "answer": "Breakfast is served in the former refectory from 07:30 to 10:30, until 11:00 on weekends. It is included in most rates; otherwise it is 28 EUR per person."
+      },
+      {
+        "topic": "pets",
+        "question": "Can I bring my dog?",
+        "answer": "Dogs up to 8 kg are welcome in our Tagus Deluxe rooms for a 35 EUR cleaning fee per stay. Pets cannot enter the cloister spa or the refectory, but the garden walks of Graça are close by."
+      },
+      {
+        "topic": "wifi",
+        "question": "Is there Wi-Fi?",
+        "answer": "Yes — complimentary fibre Wi-Fi covers the whole convent, including the cloister garden and terrace. Connect to 'ConventoSV' and enter your room number and surname."
+      },
+      {
+        "topic": "accessibility",
+        "question": "Is the hotel wheelchair accessible?",
+        "answer": "The main wing has a lift and two adapted Cloister Doubles with roll-in showers. Some heritage areas, such as the upper choir terrace, are reached only by the original stone stairs, so please mention step-free needs when booking and we will assign rooms accordingly."
+      },
+      {
+        "topic": "payment",
+        "question": "Which payment methods do you accept?",
+        "answer": "We accept Visa, Mastercard, American Express, Maestro debit, Apple Pay and Google Pay, as well as euro cash. A pre-authorisation of the first night is taken when you book."
+      },
+      {
+        "topic": "cancellation",
+        "question": "What is your cancellation policy?",
+        "answer": "Cancellation is free until 18:00 Lisbon time two days before arrival. After that, the first night including city tax is charged; no-shows are charged the first night."
+      },
+      {
+        "topic": "airport_transport",
+        "question": "How do I get there from the airport?",
+        "answer": "Lisbon Airport is about 7 km away — fifteen minutes at night. We arrange a private transfer for 45 EUR, or a metered taxi or Uber typically costs 15 to 20 EUR."
+      },
+      {
+        "topic": "luggage_storage",
+        "question": "Can you store my luggage before check-in or after check-out?",
+        "answer": "Of course — the gatehouse stores luggage free of charge on arrival and departure days, at any hour of the day or night."
+      },
+      {
+        "topic": "smoking",
+        "question": "Is smoking allowed anywhere?",
+        "answer": "The convent is entirely non-smoking indoors; smoking is permitted only on the upper choir terrace. A 200 EUR deep-cleaning fee applies if a room has been smoked in."
+      },
+      {
+        "topic": "children_extra_bed",
+        "question": "Are children welcome, and can we get an extra bed?",
+        "answer": "Children are very welcome. An extra bed is 60 EUR per night and fits in the Tagus Deluxe and the Abbess Suite; cots for under-twos are free. Please note the spa pool admits guests aged 16 and over."
+      },
+      {
+        "topic": "air_conditioning",
+        "question": "Do the rooms have air conditioning?",
+        "answer": "Yes — every room has individually controlled air conditioning, fitted discreetly within the original vaulted ceilings, and the stone walls keep rooms naturally cool in summer."
+      },
+      {
+        "topic": "pool_gym_spa",
+        "question": "Tell me about the spa — is there a pool?",
+        "answer": "The spa fills the 16th-century cloister: a heated hydrotherapy pool beneath the arcade, sauna, steam room and four treatment rooms, open 08:00 to 21:00 with treatments bookable until 20:00. A small fitness room is open 24 hours. There is no outdoor pool."
+      },
+      {
+        "topic": "neighborhood",
+        "question": "What is the neighbourhood like and what's nearby?",
+        "answer": "We sit in Graça, Lisbon's highest quarter — the Miradouro da Graça viewpoint is two minutes' walk, São Jorge Castle ten minutes downhill, and Alfama just below. The historic tram 28 stops at Largo da Graça, about 150 metres from our door."
+      },
+      {
+        "topic": "noise",
+        "question": "Is the hotel quiet at night?",
+        "answer": "Remarkably so — the convent's metre-thick walls were built for silence, and cloister-facing rooms hear little but the fountain. Tram 28 passes nearby but stops running around 23:00."
+      },
+      {
+        "topic": "room_safe",
+        "question": "Is there a safe in the room?",
+        "answer": "Yes, every room has an electronic laptop-sized safe in the wardrobe, and the front desk keeps a deposit box for larger valuables."
+      },
+      {
+        "topic": "laundry",
+        "question": "Do you offer laundry service?",
+        "answer": "Laundry and pressing collected before 09:00 is returned by 19:00 the same day — a shirt is 7 EUR, a dress 14 EUR. Express two-hour pressing is available until 20:00."
+      },
+      {
+        "topic": "early_check_in",
+        "question": "We land early — can we check in before 15:00?",
+        "answer": "Guaranteed early check-in from 11:00 can be pre-booked for 70 EUR, subject to availability. Otherwise we will store your luggage and you are welcome in the cloister garden, spa and refectory while your room is prepared."
+      },
+      {
+        "topic": "taxes_fees",
+        "question": "Are there any taxes or fees on top of the room rate?",
+        "answer": "Rates include VAT. Lisbon's municipal tourist tax of 4 EUR per adult per night, capped at seven nights, is added at check-out."
+      },
+      {
+        "topic": "history",
+        "question": "How old is the building?",
+        "answer": "The convent was founded in 1582 by Augustinian sisters and converted to a hotel in 2019. The chapter house frescoes, the 1680 azulejo panels in the refectory, and the original cistern — now lit beneath a glass floor in the spa — all survive intact."
+      },
+      {
+        "topic": "convent_traditions",
+        "question": "Does the hotel keep any of its convent traditions?",
+        "answer": "Each evening at 19:00 a small bell in the cloister rings the start of quiet hour, and the honesty bar in the former chapel pours wines from old convent estates. Many guests say the silence is the tradition we have kept best."
+      },
+      {
+        "topic": "cloister_access",
+        "question": "Can I visit the cloister if I'm not booking a spa treatment?",
+        "answer": "Yes — the cloister garden is open to all guests from 07:00 to 22:00, and morning coffee is served under the arcade from 07:30. Only the pool, sauna and treatment rooms within it require the spa booking."
+      }
+    ]
+  },
+  {
+    "slug": "villa-sintra-gardens",
+    "name": "Villa Sintra Gardens",
+    "archetype": "countryside retreat villa 35 minutes outside Lisbon",
+    "neighborhood": "Sintra (outside Lisbon)",
+    "address": "Caminho dos Castanheiros 27, 2710-355 Sintra, Portugal",
+    "stars": 4,
+    "short_description": "A quiet 11-room countryside villa in the Sintra hills, with terraced gardens, a heated outdoor pool and walking trails into the Sintra-Cascais Natural Park — 35 to 40 minutes by car from central Lisbon.",
+    "long_description": "Villa Sintra Gardens is a restored 1920s quinta set on two hectares of terraced gardens and chestnut woodland on the northern slope of the Sintra hills, about 3 km from Sintra's historic centre and a 35-40 minute drive from central Lisbon via the IC19. The villa keeps things deliberately small: eleven rooms across the main house and two garden cottages, an orangery where breakfast is served with eggs, fruit and herbs from the kitchen garden, a library with an honesty bar, and a stargazing deck with a telescope for clear nights. The heated outdoor pool is open from May to October, and a gate at the back of the orchard opens directly onto marked walking trails into the Sintra-Cascais Natural Park. This is a place for slow mornings and dark, silent nights — guests should plan to arrive by car or pre-booked transfer, as there is no public transport to the villa after midnight. Reception is staffed from 07:00 to 22:00; overnight arrivals are handled by a secure gate-and-key-safe code system, with a resident caretaker on call for emergencies.",
+    "policies": {
+      "check_in_from": "15:00",
+      "check_in_until": "22:00 at the staffed desk; arrivals after 22:00 use the self check-in procedure described in the late-arrival notes",
+      "check_out_until": "11:30",
+      "cancellation": "Free cancellation until 18:00 (Lisbon time) on the day before arrival; cancellations after that, and no-shows, are charged the first night.",
+      "pets": "Dogs up to 20 kg are welcome in the Family Garden Cottage only, for 15 EUR per night; they must be leashed in the gardens and are not permitted in the main house rooms, the orangery or the pool area.",
+      "smoking": "All indoor areas are non-smoking; smoking is permitted on the designated lower garden terrace. A 150 EUR deep-cleaning fee applies if a room has been smoked in.",
+      "payment_methods": "Visa, Mastercard, American Express, Maestro debit cards, Apple Pay/Google Pay, and cash in euros. No cheques. A pre-authorisation equal to the first night is taken at check-in.",
+      "late_arrival_notes": "Reception is staffed 07:00-22:00. For arrivals between 22:00 and 07:00, including the midnight-06:00 window, the villa uses self check-in: once the booking is guaranteed with a card, the AI receptionist sends a one-time gate code and a key-safe code by SMS, valid until 07:00. The key safe is beside the main door, lit and signposted. A resident caretaker lives on the estate and can be reached on the duty phone (+351 219 100 427) for emergencies. Note there is no public transport to the villa after midnight, so night arrivals should come by car, taxi or pre-booked transfer."
+    },
+    "amenities": [
+      "Free on-site parking (14 spaces, gated)",
+      "Heated outdoor pool (May-October)",
+      "Two hectares of terraced gardens and orchard",
+      "Free fibre Wi-Fi throughout",
+      "Breakfast in the orangery with kitchen-garden produce",
+      "Library lounge with honesty bar",
+      "Stargazing deck with telescope",
+      "Direct gate access to Sintra-Cascais Natural Park trails",
+      "Sauna (bookable, complimentary)",
+      "22 kW EV charging point",
+      "Free loan bicycles",
+      "Luggage room",
+      "Laundry service (Mon-Sat)",
+      "Massage treatments by appointment"
+    ],
+    "persona": {
+      "style": "tranquil, warm, unhurried, nature-attuned",
+      "greeting": "Good evening, you've reached Villa Sintra Gardens, up in the Sintra hills — I'm the villa's AI night receptionist, and I'm happy to help you at this hour.",
+      "speech_quirks": "Speaks slowly and softly, with small pauses, as if not to wake the house; favours gentle phrases like 'take your time', 'rest assured', and 'it's very peaceful up here tonight'. Often mentions the gardens, the hills or the night sky in passing, but never lets it get in the way of giving a concrete answer.",
+      "escalation_line": "That's something I can't resolve myself tonight, so I'll leave a careful note for our morning team — they arrive at 07:00 when the house wakes up, and they'll call you back first thing. May I take your name and number?"
+    },
+    "room_types": [
+      {
+        "code": "garden_double",
+        "name": "Garden Double",
+        "description": "A calm double room in the main house facing the terraced gardens, with a queen bed, a small writing desk and a window seat. Two ground-floor units are fully step-free with roll-in showers.",
+        "capacity": 2,
+        "base_rate_eur": 165,
+        "total_units": 5,
+        "features": [
+          "Queen bed",
+          "Garden view",
+          "Individually controlled air conditioning",
+          "Rain shower",
+          "In-room electronic safe",
+          "Two step-free accessible units available"
+        ]
+      },
+      {
+        "code": "terrace_suite",
+        "name": "Terrace Suite",
+        "description": "A first-floor suite with a king bed, a separate sitting corner and a private 12 m2 terrace looking over the orchard towards the Sintra hills. Sleeps a third guest on an extra bed on request.",
+        "capacity": 3,
+        "base_rate_eur": 205,
+        "total_units": 4,
+        "features": [
+          "King bed",
+          "Private furnished terrace",
+          "Sitting corner with daybed",
+          "Bathtub and walk-in shower",
+          "Individually controlled air conditioning",
+          "Nespresso machine",
+          "In-room electronic safe"
+        ]
+      },
+      {
+        "code": "family_cottage",
+        "name": "Family Garden Cottage",
+        "description": "A standalone single-storey cottage in the lower garden with one king bedroom, a twin bunk alcove, a kitchenette and a small private patio. The only room type where dogs are welcome. Note: three steps at the entrance.",
+        "capacity": 4,
+        "base_rate_eur": 240,
+        "total_units": 2,
+        "features": [
+          "Standalone cottage with private patio",
+          "King bedroom plus twin bunk alcove",
+          "Kitchenette with fridge and hob",
+          "Dog-friendly (15 EUR/night)",
+          "Individually controlled air conditioning",
+          "In-room electronic safe"
+        ]
+      }
+    ],
+    "occupancy_profile": "available",
+    "facts": [
+      {
+        "topic": "check_in",
+        "question": "What time can I check in?",
+        "answer": "Check-in starts at 15:00, and the desk is staffed until 22:00. If you arrive earlier we'll store your luggage and you're welcome to use the gardens and pool while your room is prepared."
+      },
+      {
+        "topic": "check_out",
+        "question": "When do I need to check out?",
+        "answer": "Check-out is by 11:30. Late check-out until 14:00 costs 40 EUR and depends on availability — ask the evening before."
+      },
+      {
+        "topic": "late_arrival",
+        "question": "I'll arrive around 2 AM — how do I get in?",
+        "answer": "No problem — the desk closes at 22:00, but once your booking is guaranteed with a card I'll send you a one-time gate code and key-safe code by SMS, valid until 07:00. The key safe is beside the lit main door, and our resident caretaker is on a duty phone for emergencies. Do plan a car, taxi or transfer, as there's no public transport up here after midnight."
+      },
+      {
+        "topic": "parking",
+        "question": "Is there parking at the villa?",
+        "answer": "Yes, free of charge — a gated gravel car park with 14 spaces right by the entrance, so there's always room. We also have one 22 kW EV charger, billed at 0.35 EUR per kWh."
+      },
+      {
+        "topic": "breakfast",
+        "question": "Is breakfast included, and when is it served?",
+        "answer": "Breakfast is included in all rates and served in the orangery from 08:00 to 10:30 — eggs, bread from a Sintra bakery, and fruit and herbs from our own kitchen garden. If you leave before 08:00 we can pack a simple breakfast bag if you ask the evening before."
+      },
+      {
+        "topic": "pets",
+        "question": "Can I bring my dog?",
+        "answer": "Dogs up to 20 kg are welcome in the Family Garden Cottage only, for 15 EUR per night. They must stay leashed in the gardens and can't come into the main house, the orangery or the pool area."
+      },
+      {
+        "topic": "wifi",
+        "question": "Is there Wi-Fi?",
+        "answer": "Yes — free fibre Wi-Fi at around 300 Mbps in all rooms, the library and most of the gardens. The signal fades at the far end of the orchard, which many guests consider a feature."
+      },
+      {
+        "topic": "accessibility",
+        "question": "Is the villa wheelchair accessible?",
+        "answer": "Two ground-floor Garden Doubles are fully step-free with roll-in showers, and the orangery and library are step-free. Some garden paths are gravel and the Family Cottage has three entrance steps, so do tell us your needs when booking."
+      },
+      {
+        "topic": "payment",
+        "question": "What payment methods do you accept?",
+        "answer": "Visa, Mastercard, American Express, Maestro, Apple Pay and Google Pay, plus cash in euros — no cheques. We take a pre-authorisation equal to your first night at check-in."
+      },
+      {
+        "topic": "cancellation",
+        "question": "What is your cancellation policy?",
+        "answer": "Cancellation is free until 18:00 Lisbon time on the day before arrival. After that, or for a no-show, we charge the first night."
+      },
+      {
+        "topic": "airport_transport",
+        "question": "How do I get there from Lisbon Airport?",
+        "answer": "It's a 40-50 minute drive from Lisbon Airport via the CRIL and IC19. We arrange a private transfer for 65 EUR each way for up to three guests (plus 15 EUR after 22:00) with 24 hours' notice; a taxi or Uber usually runs 50-60 EUR. Please note there's no public transport to the villa after midnight."
+      },
+      {
+        "topic": "luggage_storage",
+        "question": "Can you store our luggage after check-out?",
+        "answer": "Yes, our locked luggage room is free on arrival and departure days, and you can collect bags until 20:00. You're welcome to enjoy the gardens and pool until you leave."
+      },
+      {
+        "topic": "smoking",
+        "question": "Is smoking allowed?",
+        "answer": "All indoor spaces are non-smoking; there's a designated smoking spot on the lower garden terrace with an ashtray and a fine view. Smoking in a room carries a 150 EUR deep-cleaning fee."
+      },
+      {
+        "topic": "children_extra_bed",
+        "question": "Are children welcome, and can we get an extra bed?",
+        "answer": "Children are very welcome. A cot for under-2s is free, and an extra bed costs 25 EUR per night in the Terrace Suite; the Family Garden Cottage already sleeps four with its twin bunk alcove."
+      },
+      {
+        "topic": "air_conditioning",
+        "question": "Do the rooms have air conditioning?",
+        "answer": "Yes, every room and cottage has individually controlled air conditioning and heating. Sintra nights run cooler than Lisbon, often by four or five degrees, so most guests use the heating more than the cooling."
+      },
+      {
+        "topic": "pool_gym_spa",
+        "question": "Do you have a pool, gym or spa?",
+        "answer": "The heated outdoor pool is open May through October, 08:00-20:00, and our small sauna can be booked free of charge at the desk. There's no gym, but we lend bicycles and the trails start at our back gate; 50-minute massages are 70 EUR, booked 48 hours ahead."
+      },
+      {
+        "topic": "neighborhood",
+        "question": "How far are you from Lisbon and from Sintra town?",
+        "answer": "We're honestly rural: 35-40 minutes by car from central Lisbon via the IC19, and about 3 km from Sintra's historic centre — a 10-minute, roughly 10-12 EUR taxi. People come here for the hills and the quiet, not for nightlife on the doorstep."
+      },
+      {
+        "topic": "noise",
+        "question": "Is it quiet at night?",
+        "answer": "Very — there's no street noise at all up here, just wind in the chestnut trees and birdsong from about 06:00. Garden quiet hours run from 22:00 so everyone gets the silence they came for."
+      },
+      {
+        "topic": "room_safe",
+        "question": "Is there a safe in the room?",
+        "answer": "Yes, every room and cottage has an electronic safe large enough for a 15-inch laptop, set with your own code."
+      },
+      {
+        "topic": "laundry",
+        "question": "Do you offer laundry service?",
+        "answer": "Yes — bag your items by 09:00, Monday to Saturday, and they come back within 24 hours. A shirt is 4 EUR and a full wash-and-fold bag is 18 EUR; there's no self-service machine."
+      },
+      {
+        "topic": "early_check_in",
+        "question": "Can we check in early?",
+        "answer": "From 12:00, subject to availability, for 30 EUR — and we can rarely promise it the night before. Otherwise drop your luggage any time from 09:00 and enjoy the gardens or pool until your room is ready at 15:00."
+      },
+      {
+        "topic": "taxes_fees",
+        "question": "Are there any taxes or fees on top of the room rate?",
+        "answer": "Sintra's municipal tourist tax is 2 EUR per adult per night, charged for up to 7 nights and paid at the property; children under 13 are exempt. VAT is already included in our rates."
+      },
+      {
+        "topic": "unique_trails",
+        "question": "Can we hike directly from the villa?",
+        "answer": "Yes — a gate at the back of the orchard opens onto marked trails into the Sintra-Cascais Natural Park. Reception has free trail maps, and the loop to the Santa Eufémia spring viewpoint takes about 90 minutes."
+      },
+      {
+        "topic": "unique_stargazing",
+        "question": "I heard you have a stargazing deck — what's that about?",
+        "answer": "Our hillside has very little light pollution, so we built a small deck above the orchard with a fixed 8-inch telescope and blankets in a chest. It's open to guests every clear night until midnight, no booking needed."
+      },
+      {
+        "topic": "unique_honesty_bar",
+        "question": "Is there a bar or restaurant on site?",
+        "answer": "There's no restaurant — we'll happily book Sintra restaurants and a taxi for you — but the library honesty bar is open around the clock with Portuguese wines from 6 EUR a glass, local gin, and cake under a dome; you simply note down what you take."
+      }
+    ]
+  },
+  {
+    "slug": "hotel-rossio-palace",
+    "name": "Hotel Rossio Palace",
+    "archetype": "classic mid-range tourist hotel on the main square",
+    "neighborhood": "Rossio",
+    "address": "Praça de D. Pedro IV 78, 1100-202 Lisboa, Portugal",
+    "stars": 3,
+    "short_description": "A dependable 3-star classic right on Rossio square: 66 air-conditioned rooms behind a 1880s tiled facade, buffet breakfast overlooking the praça, and a night porter who has seen every arrival time there is.",
+    "long_description": "Hotel Rossio Palace has stood at number 78 on Praça de D. Pedro IV since 1932, occupying a five-storey 1880s building with the original mosaic floor still in the lobby. It is a high-volume, well-drilled tourist operation: 66 rooms across four categories, a lift to every floor, a tour desk that books Sintra day trips before you have finished your coffee, and a breakfast room on the first floor with windows straight onto the square. Rossio train station is two minutes away, Rua Augusta three, and the front desk team — staffed from 07:00 to midnight, with a night porter through the small hours — answers the same forty questions a day in five languages and never makes you feel like the forty-first. Every guest gets a complimentary glass of ginjinha at check-in, a house tradition since the 1960s.",
+    "occupancy_profile": "available",
+    "policies": {
+      "check_in_from": "15:00",
+      "check_in_until": "00:00 at the staffed front desk; arrivals after midnight are handled by the night porter (see late arrival notes)",
+      "check_out_until": "12:00",
+      "cancellation": "Free cancellation until 18:00 local time on the day of arrival; after 18:00 or in case of no-show, the first night is charged to the card on file.",
+      "pets": "Pets are not accepted; certified assistance dogs stay free of charge.",
+      "smoking": "Entirely non-smoking property; a 150 EUR deep-cleaning fee applies to smoking in rooms.",
+      "payment_methods": "Visa, Mastercard, American Express, Maestro, Apple Pay/Google Pay at the desk, and cash in euros. A valid card is required to guarantee every booking; payment is taken at check-in.",
+      "late_arrival_notes": "Between 00:00 and 06:00 a night porter is on duty at the front desk. The main doors on Praça de D. Pedro IV are locked at 00:30 — ring the brass bell to the right of the entrance and the porter will let you in. Bookings made overnight (including by phone with the AI receptionist) are guaranteed with a card; a confirmation number is sent by SMS and the porter has the arrivals list updated in real time, so 2 AM check-ins are routine here."
+    },
+    "amenities": [
+      "24-hour reception (night porter from midnight to 06:00)",
+      "Buffet breakfast room overlooking Rossio square",
+      "Free Wi-Fi throughout",
+      "Air conditioning in all rooms",
+      "Lift to all floors",
+      "Free luggage storage",
+      "In-room electronic safe",
+      "Laundry and ironing service",
+      "Tour and ticket desk",
+      "Multilingual front desk staff",
+      "Welcome glass of ginjinha at check-in"
+    ],
+    "persona": {
+      "style": "practiced, polite, efficient, unflappable",
+      "greeting": "Good evening, thank you for calling Hotel Rossio Palace on Rossio square — I'm the hotel's AI night receptionist, how may I help you?",
+      "speech_quirks": "Speaks at a steady, clear pace tuned for foreign tourists — short sentences, no slang, numbers always repeated. Has the polish of someone who answers the same questions forty times a day: favours 'certainly', 'of course', and always reads details back for confirmation ('So that is two nights, arriving Friday the 14th — perfect.').",
+      "escalation_line": "I'm afraid that's something our morning team handles directly — I'll leave them a complete note with your name and number, and someone will call you back shortly after 08:00. Would that be alright?"
+    },
+    "room_types": [
+      {
+        "code": "standard_double",
+        "name": "Standard Double",
+        "description": "Snug, well-kept double facing the quiet interior courtyard, with the same crisp linens and full amenities as the pricier rooms — the workhorse of the house.",
+        "capacity": 2,
+        "base_rate_eur": 102,
+        "total_units": 28,
+        "features": [
+          "Queen bed",
+          "Courtyard-facing (quiet)",
+          "Air conditioning",
+          "In-room safe",
+          "Walk-in shower",
+          "Free Wi-Fi"
+        ]
+      },
+      {
+        "code": "classic_twin",
+        "name": "Classic Twin",
+        "description": "Two single beds and a little more floor space, popular with friends touring together; most are on the upper floors with rooftop views toward the castle.",
+        "capacity": 2,
+        "base_rate_eur": 110,
+        "total_units": 18,
+        "features": [
+          "Two single beds",
+          "Upper floors",
+          "Air conditioning",
+          "In-room safe",
+          "Writing desk",
+          "Free Wi-Fi"
+        ]
+      },
+      {
+        "code": "square_view_double",
+        "name": "Square View Double",
+        "description": "Front-facing double with tall windows and a small Juliet balcony directly over Rossio square — double-glazed, but you book this one for the view, not the silence.",
+        "capacity": 2,
+        "base_rate_eur": 128,
+        "total_units": 12,
+        "features": [
+          "Queen bed",
+          "Juliet balcony over Rossio",
+          "Double glazing",
+          "Air conditioning",
+          "In-room safe",
+          "Nespresso machine",
+          "Free Wi-Fi"
+        ]
+      },
+      {
+        "code": "family_quad",
+        "name": "Family Room",
+        "description": "Corner room sleeping up to four with one double and two singles, courtyard-facing for quieter nights; an extra bed or cot fits on request.",
+        "capacity": 4,
+        "base_rate_eur": 148,
+        "total_units": 8,
+        "features": [
+          "One double + two single beds",
+          "Corner room, courtyard-facing",
+          "Air conditioning",
+          "Two in-room safes",
+          "Bathtub with shower",
+          "Free Wi-Fi"
+        ]
+      }
+    ],
+    "facts": [
+      {
+        "topic": "check_in",
+        "question": "What time can I check in?",
+        "answer": "Check-in starts at 15:00. If you arrive earlier we will store your luggage free of charge and call you the moment your room is ready."
+      },
+      {
+        "topic": "check_out",
+        "question": "What time is check-out?",
+        "answer": "Check-out is by 12:00. Late check-out until 14:00 costs 25 EUR, subject to availability on the day."
+      },
+      {
+        "topic": "late_arrival",
+        "question": "I land late and will arrive around 2 AM — can I still check in?",
+        "answer": "Yes, that is completely routine here. A night porter is at the desk from midnight to 06:00; the main doors lock at 00:30, so just ring the brass bell to the right of the entrance on Praça de D. Pedro IV. Your confirmation number is sent by SMS and the porter has the arrivals list, so check-in takes about five minutes."
+      },
+      {
+        "topic": "early_check_in",
+        "question": "Can I check in early in the morning?",
+        "answer": "Guaranteed early check-in from 11:00 can be booked in advance for 30 EUR. Otherwise it is free when a room happens to be ready, and we always store luggage at no charge so you can start sightseeing."
+      },
+      {
+        "topic": "parking",
+        "question": "Does the hotel have parking?",
+        "answer": "We have no parking of our own — the square is pedestrianised. The nearest garage is the Garagem dos Restauradores on Rua do Jardim do Regedor, a three-minute walk, at about 21 EUR per 24 hours; show your room card at our desk for a discount voucher."
+      },
+      {
+        "topic": "breakfast",
+        "question": "What time is breakfast and is it included?",
+        "answer": "Buffet breakfast is served in our first-floor room overlooking the square, 07:00 to 10:30 on weekdays and until 11:00 on weekends. It is included in most rates; if your rate excludes it, it costs 12 EUR per person."
+      },
+      {
+        "topic": "pets",
+        "question": "Can I bring my dog?",
+        "answer": "I'm sorry, we do not accept pets. Certified assistance dogs are of course welcome and stay free of charge."
+      },
+      {
+        "topic": "wifi",
+        "question": "Is there Wi-Fi?",
+        "answer": "Yes, free Wi-Fi throughout the building. The network is RossioPalace_Guest and the access code is printed on your key card holder."
+      },
+      {
+        "topic": "accessibility",
+        "question": "Is the hotel accessible for wheelchair users?",
+        "answer": "There is a lift to all floors and a step-free entrance via the side door, which staff open on request. We have two adapted Standard Double rooms with roll-in showers and grab rails — please mention it when booking so we can block one for you."
+      },
+      {
+        "topic": "payment",
+        "question": "Which payment methods do you accept?",
+        "answer": "Visa, Mastercard, American Express, Maestro, Apple Pay and Google Pay at the desk, and cash in euros. A valid card guarantees your booking and payment is taken at check-in."
+      },
+      {
+        "topic": "cancellation",
+        "question": "What is your cancellation policy?",
+        "answer": "Cancellation is free until 18:00 local time on the day of arrival. After 18:00, or for a no-show, we charge the first night to the card on file."
+      },
+      {
+        "topic": "airport_transport",
+        "question": "How do I get to the hotel from the airport?",
+        "answer": "By metro, take the red line from Aeroporto, change at Alameda to the green line and get off at Rossio — about 25 minutes and 1.85 EUR. A taxi takes around 20 minutes and costs 15 to 20 EUR, or we can book a private transfer for a fixed 35 EUR."
+      },
+      {
+        "topic": "luggage_storage",
+        "question": "Can you store our luggage?",
+        "answer": "Yes, free of charge for guests on arrival and departure days, in a locked room behind reception. It is available around the clock — the night porter can also take or return bags."
+      },
+      {
+        "topic": "smoking",
+        "question": "Can I smoke in the room?",
+        "answer": "The hotel is entirely non-smoking and smoking in a room carries a 150 EUR deep-cleaning fee. Most guests step out to the square — there is no shortage of fresh air on Rossio."
+      },
+      {
+        "topic": "children_extra_bed",
+        "question": "Do children stay free, and can we get an extra bed?",
+        "answer": "Children under 6 stay free in existing beds, and a baby cot is free on request. An extra bed costs 25 EUR per night and fits in the Square View Double and Family Room only."
+      },
+      {
+        "topic": "air_conditioning",
+        "question": "Do the rooms have air conditioning?",
+        "answer": "Yes, every room has individually controlled air conditioning — much appreciated in a Lisbon August."
+      },
+      {
+        "topic": "pool_gym_spa",
+        "question": "Is there a pool, gym or spa?",
+        "answer": "No — we are a classic city hotel and use every square metre for rooms. A gym two streets away on Rua da Madalena sells day passes for 10 EUR; ask the desk for a map."
+      },
+      {
+        "topic": "neighborhood",
+        "question": "What is around the hotel?",
+        "answer": "We are directly on Rossio square, Lisbon's traditional heart. Rua Augusta and the Baixa grid start three minutes away, Rossio station with direct trains to Sintra is two minutes away, and the Alfama and the castle are a 15-minute walk uphill."
+      },
+      {
+        "topic": "noise",
+        "question": "Is it noisy at night?",
+        "answer": "The square stays lively until around 01:00, especially on weekends. Square View rooms have double glazing, and our Standard, Twin and Family rooms face the quiet interior courtyard — light sleepers should ask for courtyard-facing, and there are free earplugs at the desk."
+      },
+      {
+        "topic": "room_safe",
+        "question": "Is there a safe in the room?",
+        "answer": "Yes, every room has a free electronic safe large enough for a 15-inch laptop. The Family Rooms have two."
+      },
+      {
+        "topic": "laundry",
+        "question": "Do you offer laundry service?",
+        "answer": "Yes — drop laundry at reception before 09:00 on weekdays and it comes back the same evening. A shirt is 4.50 EUR; the full price list is in your room folder."
+      },
+      {
+        "topic": "taxes_fees",
+        "question": "Are there any extra taxes or fees?",
+        "answer": "Lisbon charges a city tax of 4 EUR per person per night, capped at 7 nights, payable at the hotel; children under 13 are exempt. VAT is already included in our room rates."
+      },
+      {
+        "topic": "history",
+        "question": "Is the hotel building historic?",
+        "answer": "The building dates from the 1880s and has been a hotel since 1932 — the mosaic floor in the lobby is original. We are one of the longest continuously operating hotels on the square."
+      },
+      {
+        "topic": "ginjinha_tradition",
+        "question": "I read something about a cherry liqueur at check-in — is that true?",
+        "answer": "It is. Every arriving guest is offered a complimentary glass of ginjinha, Lisbon's sour-cherry liqueur, a house tradition since the 1960s. The famous A Ginjinha stand is one minute from our door if it converts you."
+      },
+      {
+        "topic": "tours_tickets",
+        "question": "Can the hotel help with tours and tickets?",
+        "answer": "Yes, our tour desk in the lobby is open 08:00 to 20:00 and sells Sintra day trips, tram 28 advice and skip-the-line tickets for the Santa Justa Lift. Overnight, leave your request with the receptionist and the desk confirms it first thing in the morning."
+      }
+    ]
+  }
+]
