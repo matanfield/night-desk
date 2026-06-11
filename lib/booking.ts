@@ -70,9 +70,11 @@ export interface HoldResult {
 }
 
 // Guarded INSERT ... SELECT in one statement: the availability re-check and
-// the insert happen atomically inside Postgres. (Two truly simultaneous
-// holds for the last room could both pass under READ COMMITTED — acceptable
-// for the demo; a serializable transaction would close it.)
+// the insert happen atomically inside Postgres. The `lock` CTE takes a
+// transaction-scoped advisory lock on the room type (a single statement IS
+// a transaction on the Neon HTTP driver), so two simultaneous holds for the
+// last room serialize: the second waits, then sees the first's row and fails
+// the min_avail check instead of double-booking.
 export async function createHold(args: {
   hotelId: string;
   roomTypeId: string;
@@ -88,14 +90,17 @@ export async function createHold(args: {
   const code = confirmationCode();
 
   const rows = (await sql`
-    WITH nights AS (
+    WITH lock AS (
+      SELECT pg_advisory_xact_lock(hashtext(${args.roomTypeId})) AS locked
+    ),
+    nights AS (
       SELECT inv.date, inv.units_open, inv.rate_cents,
         (SELECT COUNT(*)::int FROM reservations r
           WHERE r.room_type_id = ${args.roomTypeId}
             AND r.check_in <= inv.date AND r.check_out > inv.date
             AND (r.status = 'confirmed' OR (r.status = 'hold' AND r.hold_expires_at > now()))
         ) AS used
-      FROM inventory inv
+      FROM inventory inv, lock
       WHERE inv.room_type_id = ${args.roomTypeId}
         AND inv.date >= ${args.checkIn} AND inv.date < ${checkOut}
     ),

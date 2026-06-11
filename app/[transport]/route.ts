@@ -235,15 +235,19 @@ function buildHandler(ctx: TenantContext) {
             minute: "2-digit",
             hour12: false,
           }).format(new Date(result.holdExpiresAt!));
-          const codeSpelled = result.confirmationCode!.split("").join(" — ");
+          const DIGIT_WORDS = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
+          const codeSpoken = result
+            .confirmationCode!.split("")
+            .map((d) => DIGIT_WORDS[Number(d)])
+            .join("... ");
           return text(
             [
               `ROOM HELD.`,
-              `Confirmation code: ${result.confirmationCode} (read it digit by digit: "${codeSpelled}").`,
-              `Guest: ${guest_name.trim()} | ${room.name} | ${prettyDate(checkIn)}, ${n} night${n > 1 ? "s" : ""} | total ${eur(result.totalCents!)} — payment at the hotel, never by phone.`,
-              `The hold expires at ${expires} local time (30 minutes from now) — say this clearly.`,
-              `How to get in tonight: ${hotel.policies.late_arrival_notes}`,
-              `Now read the caller: the code (digit by digit), the total, the hold expiry, and the arrival instructions. Ask them to repeat the code back.`,
+              `Confirmation code ${result.confirmationCode} — speak it as: "${codeSpoken}".`,
+              `Guest: ${guest_name.trim()} | ${room.name} | ${prettyDate(checkIn)}, ${n} night${n > 1 ? "s" : ""} | total ${eur(result.totalCents!)} | payment at the hotel.`,
+              `Hold expires at ${expires} local time (30 minutes).`,
+              `Arrival instructions for the caller: ${hotel.policies.late_arrival_notes}`,
+              `Follow your hold read-back sequence now.`,
             ].join("\n"),
           );
         },

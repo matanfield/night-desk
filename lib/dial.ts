@@ -12,9 +12,10 @@ interface DialStatusObject {
 
 export interface DialCall {
   id: string;
-  direction?: string;
-  from?: string;
-  to?: string;
+  // Required per the Dial OpenAPI spec (direction: inbound|outbound, from/to E.164).
+  direction: string;
+  from: string;
+  to: string;
   status: string | DialStatusObject;
   duration?: number;
   transcript?: string | null;

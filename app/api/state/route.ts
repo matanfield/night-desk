@@ -35,6 +35,7 @@ export async function GET() {
     ` as Promise<Array<Record<string, unknown>>>,
     db
       .select({
+        id: activity.id,
         kind: activity.kind,
         hotelId: activity.hotelId,
         createdAt: activity.createdAt,

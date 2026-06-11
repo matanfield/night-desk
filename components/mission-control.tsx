@@ -19,6 +19,7 @@ interface HotelCard {
 }
 
 interface FeedRow {
+  id: number;
   kind: string;
   hotelId: string | null;
   createdAt: string;
@@ -121,7 +122,7 @@ export default function MissionControl() {
                 {h.roomsTonight > 0 ? (
                   <>
                     <span className="font-mono text-ok">{h.roomsTonight}</span>
-                    <span className="text-fg-dim"> rooms tonight</span>
+                    <span className="text-fg-dim"> room{h.roomsTonight === 1 ? "" : "s"} tonight</span>
                   </>
                 ) : (
                   <span className="text-bad">full tonight</span>
@@ -181,8 +182,8 @@ export default function MissionControl() {
         <div className="card p-5">
           <h2 className="text-xs uppercase tracking-[0.18em] text-fg-faint">Live wire</h2>
           <ul className="mt-3 divide-y divide-line">
-            {(state?.feed ?? []).slice(0, 12).map((f, i) => (
-              <li key={`${f.createdAt}-${i}`} className="feed-row flex items-center justify-between py-2.5 text-sm">
+            {(state?.feed ?? []).slice(0, 12).map((f) => (
+              <li key={f.id} className="feed-row flex items-center justify-between py-2.5 text-sm">
                 <div>
                   <span className="text-fg">{hotelName(f.hotelId)}</span>
                   <span className="text-fg-dim"> — {KIND_LABEL[f.kind] ?? f.kind}</span>
