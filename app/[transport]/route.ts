@@ -2,7 +2,9 @@ import { createMcpHandler } from "mcp-handler";
 import { z } from "zod";
 import { eq } from "drizzle-orm";
 import { db, messages, roomTypes } from "@/lib/db";
-import { availabilityForHotel, createHold } from "@/lib/booking";
+import { availabilityForHotel, createHold, recordPaymentLink } from "@/lib/booking";
+import { createReservationCheckout, stripeEnabled } from "@/lib/stripe";
+import { sendSms } from "@/lib/dial";
 import { localNow, prettyDate, resolveCheckIn, tonightDate, addDays, eur } from "@/lib/dates";
 import { lookupFacts } from "@/lib/facts";
 import { logActivity } from "@/lib/activity";
@@ -229,6 +231,46 @@ function buildHandler(ctx: TenantContext) {
             );
           }
 
+          // Payment-link leg: Stripe Checkout (sandbox) + SMS from the hotel's
+          // own Dial line. Best-effort by design — any failure (no Stripe key,
+          // withheld caller ID, SMS error) falls back to the classic
+          // pay-at-the-hotel hold. Never break a live call over a payment link.
+          let paymentLinkSent = false;
+          if (stripeEnabled() && ctx.callerE164 && hotel.phoneNumberId) {
+            try {
+              const checkout = await createReservationCheckout({
+                reservationId: result.reservationId!,
+                hotelId: hotel.id,
+                hotelName: hotel.name,
+                roomName: room.name,
+                guestName: guest_name.trim(),
+                checkInPretty: prettyDate(checkIn),
+                nights: n,
+                totalCents: result.totalCents!,
+                currency: hotel.currency,
+                holdExpiresAt: result.holdExpiresAt!,
+              });
+              await recordPaymentLink(result.reservationId!, checkout.sessionId, checkout.url);
+              await sendSms({
+                fromNumberId: hotel.phoneNumberId,
+                to: ctx.callerE164,
+                body:
+                  `${hotel.name}: ${room.name}, ${prettyDate(checkIn)}, ` +
+                  `${n} night${n > 1 ? "s" : ""}, total ${eur(result.totalCents!)}. ` +
+                  `Pay within 30 min to confirm (code ${result.confirmationCode}): ${checkout.url}`,
+              });
+              paymentLinkSent = true;
+              void logActivity({
+                hotelId: hotel.id,
+                kind: "payment_link_sent",
+                callerE164: ctx.callerE164,
+                detail: { reservationId: result.reservationId, totalCents: result.totalCents },
+              });
+            } catch (err) {
+              console.warn("hold_room: payment link leg failed, falling back:", (err as Error).message);
+            }
+          }
+
           const expires = new Intl.DateTimeFormat("en-GB", {
             timeZone: hotel.timezone,
             hour: "2-digit",
@@ -244,8 +286,10 @@ function buildHandler(ctx: TenantContext) {
             [
               `ROOM HELD.`,
               `Confirmation code ${result.confirmationCode} — speak it as: "${codeSpoken}".`,
-              `Guest: ${guest_name.trim()} | ${room.name} | ${prettyDate(checkIn)}, ${n} night${n > 1 ? "s" : ""} | total ${eur(result.totalCents!)} | payment at the hotel.`,
-              `Hold expires at ${expires} local time (30 minutes).`,
+              `Guest: ${guest_name.trim()} | ${room.name} | ${prettyDate(checkIn)}, ${n} night${n > 1 ? "s" : ""} | total ${eur(result.totalCents!)} | ${paymentLinkSent ? "payment link sent by SMS" : "payment at the hotel"}.`,
+              paymentLinkSent
+                ? `A payment link was JUST texted to the caller's phone. Tell them: "You've just received an SMS with a secure payment link — the room is reserved for you for the next 30 minutes to complete the payment, and paying confirms the booking." Card details go only to the payment page, never over the phone. They'll get a confirmation text once paid.`
+                : `Hold expires at ${expires} local time (30 minutes).`,
               `Arrival instructions for the caller: ${hotel.policies.late_arrival_notes}`,
               `Follow your hold read-back sequence now.`,
             ].join("\n"),

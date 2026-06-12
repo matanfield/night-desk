@@ -81,6 +81,26 @@ export async function fetchCall(callId: string): Promise<DialCall> {
   return data.call;
 }
 
+// POST /api/v1/messages — not idempotent (no idempotency key), so callers
+// treat an ambiguous failure as "maybe sent" and do NOT blind-retry.
+export async function sendSms(args: {
+  fromNumberId: string;
+  to: string;
+  body: string;
+}): Promise<{ id: string; status: string }> {
+  const data = (await dialFetch("/api/v1/messages", {
+    method: "POST",
+    body: JSON.stringify({
+      to: args.to,
+      fromNumberId: args.fromNumberId,
+      body: args.body,
+      channel: "sms",
+    }),
+  })) as { message?: { id: string; status?: string } };
+  if (!data.message?.id) throw new Error("Dial returned an unexpected message shape");
+  return { id: data.message.id, status: data.message.status ?? "queued" };
+}
+
 export async function listNumbers(): Promise<DialNumber[]> {
   const data = (await dialFetch("/api/v1/numbers")) as { numbers: DialNumber[] };
   return data.numbers ?? [];

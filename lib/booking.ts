@@ -134,3 +134,67 @@ export async function createHold(args: {
     holdExpiresAt: new Date(String(r.hold_expires_at)).toISOString(),
   };
 }
+
+export async function recordPaymentLink(
+  reservationId: string,
+  stripeSessionId: string,
+  url: string,
+): Promise<void> {
+  await sql`
+    UPDATE reservations
+    SET stripe_session_id = ${stripeSessionId}, payment_link_url = ${url}
+    WHERE id = ${reservationId}
+  `;
+}
+
+export interface PaidReservation {
+  reservationId: string;
+  hotelId: string;
+  hotelName: string;
+  hotelPhoneNumberId: string | null;
+  roomName: string;
+  guestName: string;
+  guestPhone: string | null;
+  confirmationCode: string;
+  checkIn: string;
+  totalCents: number;
+  currency: string;
+}
+
+// Webhook-driven hold -> confirmed flip. Idempotent: a duplicate
+// checkout.session.completed matches zero rows and returns null. Holds expire
+// lazily (by timestamp, status stays 'hold'), so a payment landing in the
+// ~1 min between hold expiry and session expiry still confirms — accepted at
+// demo scale instead of refund plumbing.
+export async function confirmReservationPaid(
+  reservationId: string,
+): Promise<PaidReservation | null> {
+  const rows = (await sql`
+    UPDATE reservations r
+    SET status = 'confirmed', paid_at = now()
+    FROM hotels h, room_types rt
+    WHERE r.id = ${reservationId}
+      AND r.status = 'hold'
+      AND h.id = r.hotel_id
+      AND rt.id = r.room_type_id
+    RETURNING r.id, r.hotel_id, h.name AS hotel_name, h.phone_number_id,
+              rt.name AS room_name, r.guest_name, r.guest_phone,
+              r.confirmation_code, r.check_in, r.total_cents, r.currency
+  `) as Array<Record<string, unknown>>;
+
+  if (rows.length === 0) return null;
+  const r = rows[0];
+  return {
+    reservationId: String(r.id),
+    hotelId: String(r.hotel_id),
+    hotelName: String(r.hotel_name),
+    hotelPhoneNumberId: r.phone_number_id ? String(r.phone_number_id) : null,
+    roomName: String(r.room_name),
+    guestName: String(r.guest_name),
+    guestPhone: r.guest_phone ? String(r.guest_phone) : null,
+    confirmationCode: String(r.confirmation_code),
+    checkIn: String(r.check_in),
+    totalCents: Number(r.total_cents),
+    currency: String(r.currency),
+  };
+}

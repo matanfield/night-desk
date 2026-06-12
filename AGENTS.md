@@ -5,7 +5,7 @@
 - This is a hackathon product built around Dial's inbound voice-agent stack: hotel phone lines answer calls, resolve tenant context from Dial headers, and use this app's MCP tools during the call.
 - Keep the repo demo-oriented and explainable. Prefer small, direct changes over framework-heavy abstractions.
 - This project is the hotel receptionist side of the broader Dial hackathon flow. Do not copy Rather architecture or unrelated Dial demo code; borrow only focused habits and proven integration patterns.
-- Use Stripe only where it directly supports the Night Desk demo, hackathon prize criteria, or a clearly separated follow-up flow. Holds in the current product are name-only and must not collect payment details.
+- Stripe powers exactly one flow: after `hold_room`, a sandbox Checkout link is texted to the caller from the hotel's Dial line, and the `checkout.session.completed` webhook flips the hold to confirmed. One platform Stripe account (ours) transacts for all demo hotels. The voice channel and this app must never collect or store card details — payment happens only on Stripe-hosted Checkout — and the payment-link leg must degrade to a plain pay-at-hotel hold whenever Stripe or SMS is unavailable.
 
 ## Working Rules
 
@@ -34,6 +34,7 @@
 - Runtime surfaces:
   - `app/[transport]/route.ts` is the MCP server.
   - `app/api/webhooks/dial/route.ts` receives Dial call events.
+  - `app/api/webhooks/stripe/route.ts` receives Stripe payment events and finalizes reservations.
   - `app/api/state/route.ts` and `app/api/hotels/[slug]/route.ts` support dashboards.
   - `app/page.tsx` and `app/hotels/[slug]/page.tsx` are the operator UI surfaces.
 

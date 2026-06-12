@@ -23,4 +23,7 @@ export const KIND_LABEL: Record<string, string> = {
   hold_room: "placed a hold",
   take_message: "took a message",
   call_ended: "call ended",
+  payment_link_sent: "texted a payment link",
+  payment_completed: "payment received — booking confirmed",
+  payment_link_expired: "payment link expired",
 };

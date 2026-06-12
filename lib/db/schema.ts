@@ -95,6 +95,12 @@ export const reservations = pgTable(
     currency: text("currency").notNull().default("EUR"),
     confirmationCode: text("confirmation_code").notNull(),
     holdExpiresAt: timestamp("hold_expires_at", { withTimezone: true }),
+    // Stripe payment-link flow: set when hold_room texts a Checkout link.
+    // paidAt is written by the checkout.session.completed webhook, which is
+    // also the only path that flips status hold -> confirmed.
+    stripeSessionId: text("stripe_session_id"),
+    paymentLinkUrl: text("payment_link_url"),
+    paidAt: timestamp("paid_at", { withTimezone: true }),
     source: text("source").notNull().default("ai_receptionist"),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },
