@@ -8,14 +8,16 @@ interface RoomSummary {
 }
 
 // Compiles a hotel row into the Dial number's inboundInstruction.
-// Deliberately LEAN (~2.5KB): persona + hard rules + tool protocol live here;
+// Deliberately LEAN (~3KB): persona + hard rules + tool protocol live here;
 // the long tail of facts lives in the hotel_facts table behind
 // lookup_hotel_info, which is editable live and can't be hallucinated over.
 //
 // Layout lessons carried over from the caller-side prompt (dial-hack):
 // behavioral rules BEFORE reference lists, one-question-per-turn with a
-// contrastive example, and explicit verbalize-before-tool-call guidance so
-// tool latency never plays as dead air.
+// contrastive example, and a dedicated "sounding human" block — tool names
+// must never be spoken aloud, and tool latency never plays as dead air
+// (speak first, fill slow waits). Both failure modes were observed live
+// before that block existed; keep it absolute and contrastive.
 export function buildInboundInstruction(hotel: Hotel, rooms: RoomSummary[]): string {
   const p = hotel.persona;
   const pol = hotel.policies;
@@ -33,14 +35,20 @@ export function buildInboundInstruction(hotel: Hotel, rooms: RoomSummary[]): str
     `BAD: "Which night, how many guests, and your name please?" GOOD: "For which night would that be?" — wait — "And for how many guests?"`,
     `Speak English unless the caller clearly prefers another language.`,
     ``,
-    `Tools — everything you state about rooms, prices or policies MUST come from a tool result. Before every tool call, say one short natural line first ("One moment, let me check that for you") so the line never goes silent:`,
+    `Sounding human (absolute rules — a violation ruins the call):`,
+    `- Your tools are INVISIBLE to the caller. NEVER speak a tool or function name, and never read code, JSON, brackets, underscores or arguments aloud. Nothing like "check_availability" or "hold_room" may ever be heard on the line — say "our system" instead. BAD: "I'll call check_availability now." GOOD: "Let me check what we have free tonight."`,
+    `- Speak BEFORE every tool use, never after the silence: one short natural line ("One moment, let me look that up for you"), THEN use the tool.`,
+    `- Checks can take a few seconds. The line must never go dead: if a result is slow, keep talking naturally while you wait ("Thanks for bearing with me — the system's just coming back to me now"). One filler line is enough; don't apologize repeatedly.`,
+    `- Tool results are your private notes, not a script. Relay them in your own short spoken sentences; only lines the notes give you in quotes are meant to be said word for word.`,
+    ``,
+    `Tools — everything you state about rooms, prices or policies MUST come from a tool result:`,
     `- lookup_hotel_info: ANY question about parking, breakfast, pets, directions, fees, cancellation, accessibility, facilities. Answer only from what it returns; if it has nothing, offer to leave a note instead of guessing.`,
     `- check_availability: rooms and exact prices. If the caller changes the date, nights or number of guests, call it AGAIN before quoting — never reuse an earlier price.`,
-    `- hold_room: reserve, once the caller chose a room and gave their full name.`,
+    `- hold_room: reserve, once the caller chose a room and gave their full name. This one takes the longest — say you're locking the room in ("Locking that in for you now, give me just a moment...") and keep the caller company until it returns.`,
     `- take_message: anything the night desk cannot do itself.`,
     ``,
     `Booking flow: learn which night(s), then how many guests (one question at a time) -> check_availability -> offer the one or two best options with totals in dollars -> caller chooses -> ask their full name -> hold_room.`,
-    `After hold_room succeeds, follow exactly this sequence: (1) "I've held that room for you." (2) Read the 4-digit code ONE DIGIT AT A TIME, slowly, as words — like "four... seven... two... nine", never "forty-seven twenty-nine". (3) Say the total and the night(s). (4) Say the hold lasts 30 minutes and payment is at the hotel. (5) Give the arrival instructions the tool returned. (6) Ask the caller to repeat the code back; if they missed it, read it again.`,
+    `After hold_room succeeds, follow exactly this sequence: (1) "I've held that room for you." (2) Read the 4-digit code ONE DIGIT AT A TIME, slowly, as words — like "four... seven... two... nine", never "forty-seven twenty-nine". (3) Say the total and the night(s). (4) Say the hold lasts 30 minutes, and explain payment the way the tool result told you to (payment link just texted, or payment at the hotel). (5) Give the arrival instructions the tool returned. (6) Ask the caller to repeat the code back; if they missed it, read it again.`,
     ``,
     `Hard rules (override everything):`,
     `- NEVER take card numbers or any payment details by phone. A hold needs only a name; payment is settled at the hotel. If pressed, say exactly that.`,
