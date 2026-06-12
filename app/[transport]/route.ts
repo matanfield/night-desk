@@ -28,6 +28,20 @@ function buildHandler(ctx: TenantContext) {
     (server) => {
       const hotel = ctx.hotel;
 
+      // A refused tools/call is the ONLY trace we get when Dial reaches us
+      // with headers we don't accept (wrong direction, unknown line, masked
+      // caller). Without this row the dashboard shows nothing and the failure
+      // is indistinguishable from "Dial never called" — log it or debug blind.
+      function refuseLogged(tool: string) {
+        void logActivity({
+          hotelId: null,
+          kind: "refused_tool_call",
+          callerE164: ctx.callerE164,
+          detail: { tool, direction: ctx.direction },
+        });
+        return refuse(ctx.refusal);
+      }
+
       server.registerTool(
         "get_hotel_info",
         {
@@ -39,7 +53,7 @@ function buildHandler(ctx: TenantContext) {
           inputSchema: {},
         },
         async () => {
-          if (!hotel) return refuse(ctx.refusal);
+          if (!hotel) return refuseLogged("get_hotel_info");
           const now = localNow(hotel.timezone);
           const tonight = tonightDate(hotel.timezone);
           const rooms = await db
@@ -84,7 +98,7 @@ function buildHandler(ctx: TenantContext) {
           },
         },
         async ({ question }) => {
-          if (!hotel) return refuse(ctx.refusal);
+          if (!hotel) return refuseLogged("lookup_hotel_info");
           const hits = await lookupFacts(hotel.id, question);
           void logActivity({
             hotelId: hotel.id,
@@ -124,7 +138,7 @@ function buildHandler(ctx: TenantContext) {
           },
         },
         async ({ check_in, nights, guests }) => {
-          if (!hotel) return refuse(ctx.refusal);
+          if (!hotel) return refuseLogged("check_availability");
           const checkIn = resolveCheckIn(check_in, hotel.timezone);
           if (!checkIn) {
             return text(
@@ -185,7 +199,7 @@ function buildHandler(ctx: TenantContext) {
           },
         },
         async ({ room_code, guest_name, check_in, nights, guests }) => {
-          if (!hotel) return refuse(ctx.refusal);
+          if (!hotel) return refuseLogged("hold_room");
           const checkIn = resolveCheckIn(check_in, hotel.timezone);
           if (!checkIn) {
             return text(`Could not understand check_in "${check_in}". Use "tonight", "tomorrow", or YYYY-MM-DD.`);
@@ -311,7 +325,7 @@ function buildHandler(ctx: TenantContext) {
           },
         },
         async ({ message, guest_name }) => {
-          if (!hotel) return refuse(ctx.refusal);
+          if (!hotel) return refuseLogged("take_message");
           await db.insert(messages).values({
             hotelId: hotel.id,
             guestName: guest_name ?? null,
@@ -337,6 +351,14 @@ function buildHandler(ctx: TenantContext) {
 export async function POST(req: Request) {
   try {
     if (!checkSharedSecret(req.headers)) {
+      // If Dial ever stops sending the static secret header mid-call, every
+      // tool request 401s here invisibly — leave a trace in the activity feed.
+      void logActivity({
+        hotelId: null,
+        kind: "unauthorized_mcp_request",
+        callerE164: req.headers.get("x-dial-user-number"),
+        detail: { direction: req.headers.get("x-dial-direction") },
+      });
       return Response.json({ error: "unauthorized" }, { status: 401 });
     }
     const ctx = await resolveTenant(req.headers);
