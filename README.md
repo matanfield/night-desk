@@ -1,3 +1,6 @@
+See second complementary product - Claude calling agent extension: https://github.com/matanfield/dial-hack
+
+
 # Night Desk
 
 After-hours AI receptionist network for hotels — the answering side of the
