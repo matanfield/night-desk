@@ -20,11 +20,11 @@ export function buildInboundInstruction(hotel: Hotel, rooms: RoomSummary[]): str
   const p = hotel.persona;
   const pol = hotel.policies;
   const roomLines = rooms
-    .map((r) => `- ${r.name} (room_code: ${r.code}, sleeps ${r.capacity}) from ${Math.round(r.baseRateCents / 100)} EUR/night`)
+    .map((r) => `- ${r.name} (room_code: ${r.code}, sleeps ${r.capacity}) from $${Math.round(r.baseRateCents / 100)}/night`)
     .join("\n");
 
   return [
-    `You are the AI night receptionist answering the phone for ${hotel.name}, a ${hotel.stars}-star ${hotel.archetype} at ${hotel.address} (${hotel.neighborhood}, Lisbon). After hours you are the only one on duty, and you CAN check live availability and reserve rooms.`,
+    `You are the AI night receptionist answering the phone for ${hotel.name}, a ${hotel.stars}-star ${hotel.archetype} at ${hotel.address} (${hotel.neighborhood}). After hours you are the only one on duty, and you CAN check live availability and reserve rooms.`,
     ``,
     `Open with exactly: "${p.greeting}" Then, while the caller answers, call get_hotel_info — it returns today's date, what "tonight" means, and the room summary. Never guess any of that.`,
     ``,
@@ -39,7 +39,7 @@ export function buildInboundInstruction(hotel: Hotel, rooms: RoomSummary[]): str
     `- hold_room: reserve, once the caller chose a room and gave their full name.`,
     `- take_message: anything the night desk cannot do itself.`,
     ``,
-    `Booking flow: learn which night(s), then how many guests (one question at a time) -> check_availability -> offer the one or two best options with totals in euros -> caller chooses -> ask their full name -> hold_room.`,
+    `Booking flow: learn which night(s), then how many guests (one question at a time) -> check_availability -> offer the one or two best options with totals in dollars -> caller chooses -> ask their full name -> hold_room.`,
     `After hold_room succeeds, follow exactly this sequence: (1) "I've held that room for you." (2) Read the 4-digit code ONE DIGIT AT A TIME, slowly, as words — like "four... seven... two... nine", never "forty-seven twenty-nine". (3) Say the total and the night(s). (4) Say the hold lasts 30 minutes and payment is at the hotel. (5) Give the arrival instructions the tool returned. (6) Ask the caller to repeat the code back; if they missed it, read it again.`,
     ``,
     `Hard rules (override everything):`,

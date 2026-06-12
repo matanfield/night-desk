@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import { eur, stars, timeAgo } from "./util";
+import { stars, timeAgo, usd } from "./util";
 
 interface Room {
   id: string;
@@ -199,7 +199,7 @@ export default function HotelDetail({ slug }: { slug: string }) {
                   <td className="py-2 pr-3">
                     <div className="text-sm text-fg">{r.name}</div>
                     <div className="text-fg-faint">
-                      sleeps {r.capacity} · from <span className="font-mono">{eur(r.baseRateCents)}</span>
+                      sleeps {r.capacity} · from <span className="font-mono">{usd(r.baseRateCents)}</span>
                     </div>
                   </td>
                   {dates.map((d) => {
@@ -212,7 +212,7 @@ export default function HotelDetail({ slug }: { slug: string }) {
                           ? "text-lamp bg-[rgba(240,179,94,0.07)]"
                           : "text-ok bg-[rgba(110,231,168,0.05)]";
                     return (
-                      <td key={d} className={`py-2 text-center font-mono ${cls}`} title={c ? `${eur(c.rate_cents)}/night` : ""}>
+                      <td key={d} className={`py-2 text-center font-mono ${cls}`} title={c ? `${usd(c.rate_cents)}/night` : ""}>
                         {avail <= 0 ? "·" : avail}
                       </td>
                     );
@@ -236,7 +236,7 @@ export default function HotelDetail({ slug }: { slug: string }) {
                     <span className="text-fg-faint"> · {roomName(r.roomTypeId)}</span>
                   </span>
                   <span className="flex items-center gap-2">
-                    <span className="font-mono">{eur(r.totalCents)}</span>
+                    <span className="font-mono">{usd(r.totalCents)}</span>
                     <span
                       className={`pill ${
                         r.status === "hold"

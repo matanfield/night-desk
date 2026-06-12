@@ -3,7 +3,7 @@
  *
  * Usage:
  *   pnpm provision                       # the 3 default demo hotels
- *   pnpm provision the-fado-house        # add/refresh specific slugs
+ *   pnpm provision the-southline-hotel   # add/refresh specific slugs
  *
  * Buying a number costs Dial credit — the default list stays small.
  * Re-running PATCHes instructions on already-wired hotels (no new cost).
@@ -12,9 +12,9 @@ import { config } from "dotenv";
 config({ path: ".env.local" });
 
 const DEFAULT_LIVE = [
-  "hotel-miradouro-azul", // the winner: rooms tonight at fair prices
-  "pensao-estrela-do-tejo", // sold out tonight
-  "grande-hotel-lusitania", // available but expensive
+  "the-roundhouse-hotel", // the winner: rooms tonight at fair prices, A/C, 8 min from Caltrain
+  "mission-bay-grand", // sold out tonight (convention + Chase Center event)
+  "the-belgrave-san-francisco", // available but far over budget
 ];
 
 async function main() {

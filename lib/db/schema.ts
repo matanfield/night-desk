@@ -14,7 +14,7 @@ import {
 // One row per imaginary hotel. `phoneE164` links a Dial inbound line to this
 // tenant: the MCP server resolves the hotel from X-Dial-Agent-Number.
 export const hotels = pgTable("hotels", {
-  id: text("id").primaryKey(), // slug, e.g. "hotel-miradouro-azul"
+  id: text("id").primaryKey(), // slug, e.g. "the-roundhouse-hotel"
   name: text("name").notNull(),
   archetype: text("archetype").notNull(),
   neighborhood: text("neighborhood").notNull(),
@@ -22,8 +22,8 @@ export const hotels = pgTable("hotels", {
   stars: integer("stars").notNull(),
   shortDescription: text("short_description").notNull(),
   longDescription: text("long_description").notNull(),
-  timezone: text("timezone").notNull().default("Europe/Lisbon"),
-  currency: text("currency").notNull().default("EUR"),
+  timezone: text("timezone").notNull().default("America/Los_Angeles"),
+  currency: text("currency").notNull().default("USD"),
   occupancyProfile: text("occupancy_profile").notNull().default("available"),
   persona: jsonb("persona").$type<{
     style: string;
@@ -92,7 +92,7 @@ export const reservations = pgTable(
     checkOut: date("check_out").notNull(), // exclusive
     guests: integer("guests").notNull().default(2),
     totalCents: integer("total_cents").notNull(),
-    currency: text("currency").notNull().default("EUR"),
+    currency: text("currency").notNull().default("USD"),
     confirmationCode: text("confirmation_code").notNull(),
     holdExpiresAt: timestamp("hold_expires_at", { withTimezone: true }),
     // Stripe payment-link flow: set when hold_room texts a Checkout link.

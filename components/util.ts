@@ -1,6 +1,6 @@
-export function eur(cents: number | null | undefined): string {
+export function usd(cents: number | null | undefined): string {
   if (cents == null) return "—";
-  return `€${(cents / 100).toFixed(cents % 100 === 0 ? 0 : 2)}`;
+  return `$${(cents / 100).toFixed(cents % 100 === 0 ? 0 : 2)}`;
 }
 
 export function timeAgo(iso: string | null | undefined): string {

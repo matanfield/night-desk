@@ -3,15 +3,22 @@
 After-hours AI receptionist network for hotels — the answering side of the
 [dial-hack](https://github.com/matanfield/dial-hack) availability concierge.
 
-Twelve imaginary Lisbon hotels live in Postgres with rooms, nightly rates,
-inventory and a Q&A handbook. A few of them get real phone numbers: Dial
-answers each line with that hotel's compiled persona, and mid-call the voice
-agent uses this app's MCP tools to check live availability, quote prices,
-place 30-minute holds, answer handbook questions, and take messages. When a
-room is held, the hotel's line texts the caller a Stripe Checkout link —
-paying it within the 30-minute hold confirms the booking and texts back the
-confirmation code. No card details ever cross the phone or this app.
-Dashboards watch it all happen in real time.
+Twelve imaginary San Francisco hotels live in Postgres with rooms, nightly
+rates, inventory and a Q&A handbook. A few of them get real phone numbers:
+Dial answers each line with that hotel's compiled persona, and mid-call the
+voice agent uses this app's MCP tools to check live availability, quote
+prices, place 30-minute holds, answer handbook questions, and take messages.
+When a room is held, the hotel's line texts the caller a Stripe Checkout
+link — paying it within the 30-minute hold confirms the booking and texts
+back the confirmation code. No card details ever cross the phone or this
+app. Dashboards watch it all happen in real time.
+
+Demo scenario: a traveler steps off at the Caltrain station (4th & King) at
+2 AM and needs a 3-4 star room under $200/night within a 15-minute walk,
+with A/C and an in-room shower. The synthetic network is built around that
+search — perfect matches, a sold-out conference hotel, a grand dame over
+budget, a charming inn with no A/C, a hostel, and a hotel on the wrong side
+of town — so the concierge's calls always have somewhere interesting to land.
 
 ## Architecture
 
@@ -70,8 +77,8 @@ pnpm attach-mcp   # connect Context MCP + webhook; set DIAL_WEBHOOK_SECRET
    `stripe listen --forward-to localhost:3000/api/webhooks/stripe`.
 3. Pay test links with card `4242 4242 4242 4242`, any future expiry, any CVC.
 
-Then phone a live hotel line at 2 AM, ask for a room, and pay the link that
-lands in your texts.
+Then phone a live hotel line at 2 AM, ask for a room near the Caltrain
+station, and pay the link that lands in your texts.
 
 ## Notes
 

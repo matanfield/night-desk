@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { eur, KIND_LABEL, stars, timeAgo } from "./util";
+import { KIND_LABEL, stars, timeAgo, usd } from "./util";
 
 interface HotelCard {
   id: string;
@@ -84,7 +84,7 @@ export default function MissionControl() {
         <div>
           <h1 className="font-display text-4xl italic tracking-tight">Night Desk</h1>
           <p className="mt-1 text-sm text-fg-dim">
-            After-hours reception network · Lisbon
+            After-hours reception network · San Francisco
             {state ? <span className="ml-2 font-mono text-fg-faint">{state.now}</span> : null}
           </p>
         </div>
@@ -129,7 +129,7 @@ export default function MissionControl() {
                 )}
               </div>
               <div className="font-mono text-sm text-fg-dim">
-                {h.fromCents != null ? `from ${eur(h.fromCents)}` : ""}
+                {h.fromCents != null ? `from ${usd(h.fromCents)}` : ""}
               </div>
             </div>
 
@@ -168,7 +168,7 @@ export default function MissionControl() {
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="font-mono text-sm">{eur(r.totalCents)}</span>
+                  <span className="font-mono text-sm">{usd(r.totalCents)}</span>
                   <StatusPill status={r.status} />
                 </div>
               </li>

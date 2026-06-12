@@ -37,7 +37,7 @@ async function main() {
       name: string;
       description: string;
       capacity: number;
-      base_rate_eur: number;
+      base_rate_usd: number;
       total_units: number;
       features: string[];
     }>;
@@ -54,13 +54,21 @@ async function main() {
     SELECT id, phone_number_id, phone_e164, is_live FROM hotels WHERE phone_number_id IS NOT NULL
   `) as Array<{ id: string; phone_number_id: string; phone_e164: string; is_live: boolean }>;
 
+  // Lisbon -> San Francisco transition: carry purchased Dial lines over to the
+  // hotel playing the same demo role, so re-seeding never orphans a number.
+  const SLUG_REMAP: Record<string, string> = {
+    "hotel-miradouro-azul": "the-roundhouse-hotel", // the winner: rooms at fair prices
+    "pensao-estrela-do-tejo": "mission-bay-grand", // sold out tonight
+    "grande-hotel-lusitania": "the-belgrave-san-francisco", // available but expensive
+  };
+
   await sql`TRUNCATE hotels, room_types, inventory, reservations, calls, hotel_facts, messages, activity CASCADE`;
 
-  const tonight = tonightDate("Europe/Lisbon");
+  const tonight = tonightDate("America/Los_Angeles");
   const NIGHTS = 21;
 
   for (const h of data) {
-    const wired = wiring.find((w) => w.id === h.slug);
+    const wired = wiring.find((w) => w.id === h.slug || SLUG_REMAP[w.id] === h.slug);
     await db.insert(hotels).values({
       id: h.slug,
       name: h.name,
@@ -70,6 +78,8 @@ async function main() {
       stars: h.stars,
       shortDescription: h.short_description,
       longDescription: h.long_description,
+      timezone: "America/Los_Angeles",
+      currency: "USD",
       occupancyProfile: h.occupancy_profile,
       persona: h.persona,
       policies: h.policies as typeof hotels.$inferInsert.policies,
@@ -79,7 +89,7 @@ async function main() {
       isLive: wired?.is_live ?? false,
     });
 
-    const cheapest = [...h.room_types].sort((a, b) => a.base_rate_eur - b.base_rate_eur)[0];
+    const cheapest = [...h.room_types].sort((a, b) => a.base_rate_usd - b.base_rate_usd)[0];
 
     for (const rt of h.room_types) {
       const rtId = `${h.slug}:${rt.code}`;
@@ -90,7 +100,7 @@ async function main() {
         name: rt.name,
         description: rt.description,
         capacity: rt.capacity,
-        baseRateCents: rt.base_rate_eur * 100,
+        baseRateCents: rt.base_rate_usd * 100,
         totalUnits: rt.total_units,
         features: rt.features,
       });
@@ -100,10 +110,10 @@ async function main() {
         const date = addDays(tonight, day);
         const rng = seededRandom(`${h.slug}:${rt.code}:${date}`);
 
-        // Weekend bump + mild noise, rounded to whole euros.
+        // Weekend bump + mild noise, rounded to whole dollars.
         const dow = new Date(`${date}T12:00:00Z`).getUTCDay();
         const weekend = dow === 5 || dow === 6;
-        const rate = Math.round(rt.base_rate_eur * (weekend ? 1.18 : 1) * (0.95 + rng() * 0.2));
+        const rate = Math.round(rt.base_rate_usd * (weekend ? 1.18 : 1) * (0.95 + rng() * 0.2));
 
         // Occupancy: tonight is scripted by the demo profile, later nights relax.
         let open: number;

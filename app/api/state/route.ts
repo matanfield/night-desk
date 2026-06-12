@@ -8,7 +8,7 @@ export const dynamic = "force-dynamic";
 // "On a call" = any MCP tool activity in the last 90 seconds (Dial emits no
 // call-started event, so tool traffic IS the live signal).
 export async function GET() {
-  const tz = "Europe/Lisbon";
+  const tz = "America/Los_Angeles";
   const tonight = tonightDate(tz);
 
   const [tonightRows, liveRows, feed, recentReservations, recentCalls] = await Promise.all([

@@ -1,6 +1,6 @@
 import { confirmReservationPaid } from "@/lib/booking";
 import { sendSms } from "@/lib/dial";
-import { eur, prettyDate } from "@/lib/dates";
+import { prettyDate, usd } from "@/lib/dates";
 import { verifyStripeWebhook } from "@/lib/stripe";
 import { logActivity } from "@/lib/activity";
 
@@ -71,7 +71,7 @@ export async function POST(req: Request) {
         to: paid.guestPhone,
         body:
           `${paid.hotelName}: payment received — your booking is confirmed. ` +
-          `${paid.roomName}, check-in ${prettyDate(paid.checkIn)}, ${eur(paid.totalCents)}. ` +
+          `${paid.roomName}, check-in ${prettyDate(paid.checkIn)}, ${usd(paid.totalCents)}. ` +
           `Confirmation code: ${paid.confirmationCode}. See you tonight!`,
       });
     } catch (err) {

@@ -5,7 +5,7 @@ import { db, messages, roomTypes } from "@/lib/db";
 import { availabilityForHotel, createHold, recordPaymentLink } from "@/lib/booking";
 import { createReservationCheckout, stripeEnabled } from "@/lib/stripe";
 import { sendSms } from "@/lib/dial";
-import { localNow, prettyDate, resolveCheckIn, tonightDate, addDays, eur } from "@/lib/dates";
+import { localNow, prettyDate, resolveCheckIn, tonightDate, addDays, usd } from "@/lib/dates";
 import { lookupFacts } from "@/lib/facts";
 import { logActivity } from "@/lib/activity";
 import { checkSharedSecret, resolveTenant, type TenantContext } from "@/lib/tenant";
@@ -54,14 +54,14 @@ function buildHandler(ctx: TenantContext) {
           return text(
             [
               `${hotel.name} — ${hotel.stars}-star ${hotel.archetype}`,
-              `Address: ${hotel.address}, ${hotel.neighborhood}, Lisbon.`,
+              `Address: ${hotel.address} (${hotel.neighborhood}).`,
               `Local time now: ${now.pretty} (${hotel.timezone}).`,
               `"Tonight" = the night of ${prettyDate(tonight)} — pass check_in "tonight" for it. "Tomorrow" = the night of ${prettyDate(addDays(tonight, 1))}.`,
               ``,
               `Room types (use check_availability for live prices and stock):`,
               ...rooms.map(
                 (r) =>
-                  `- ${r.name} (room_code: ${r.code}, sleeps ${r.capacity}) from ${Math.round(r.baseRateCents / 100)} EUR/night`,
+                  `- ${r.name} (room_code: ${r.code}, sleeps ${r.capacity}) from $${Math.round(r.baseRateCents / 100)}/night`,
               ),
               ``,
               `Policies, parking, breakfast, directions: use lookup_hotel_info with the caller's question.`,
@@ -153,7 +153,7 @@ function buildHandler(ctx: TenantContext) {
           const list = (fits.length > 0 ? fits : open)
             .map(
               (r) =>
-                `- ${r.name} (room_code: ${r.code}): ${r.available} left, sleeps ${r.capacity}, total ${eur(r.totalCents)} for the stay`,
+                `- ${r.name} (room_code: ${r.code}): ${r.available} left, sleeps ${r.capacity}, total ${usd(r.totalCents)} for the stay`,
             )
             .join("\n");
           const capacityNote =
@@ -162,7 +162,7 @@ function buildHandler(ctx: TenantContext) {
               : "";
           return text(
             `AVAILABLE for ${stay}:\n${list}${capacityNote}\n\n` +
-              `Quote at most the one or two best-fitting options, with the total in euros. ` +
+              `Quote at most the one or two best-fitting options, with the total in dollars. ` +
               `To reserve: ask the caller's full name, then call hold_room with the room_code.`,
           );
         },
@@ -256,7 +256,7 @@ function buildHandler(ctx: TenantContext) {
                 to: ctx.callerE164,
                 body:
                   `${hotel.name}: ${room.name}, ${prettyDate(checkIn)}, ` +
-                  `${n} night${n > 1 ? "s" : ""}, total ${eur(result.totalCents!)}. ` +
+                  `${n} night${n > 1 ? "s" : ""}, total ${usd(result.totalCents!)}. ` +
                   `Pay within 30 min to confirm (code ${result.confirmationCode}): ${checkout.url}`,
               });
               paymentLinkSent = true;
@@ -286,7 +286,7 @@ function buildHandler(ctx: TenantContext) {
             [
               `ROOM HELD.`,
               `Confirmation code ${result.confirmationCode} — speak it as: "${codeSpoken}".`,
-              `Guest: ${guest_name.trim()} | ${room.name} | ${prettyDate(checkIn)}, ${n} night${n > 1 ? "s" : ""} | total ${eur(result.totalCents!)} | ${paymentLinkSent ? "payment link sent by SMS" : "payment at the hotel"}.`,
+              `Guest: ${guest_name.trim()} | ${room.name} | ${prettyDate(checkIn)}, ${n} night${n > 1 ? "s" : ""} | total ${usd(result.totalCents!)} | ${paymentLinkSent ? "payment link sent by SMS" : "payment at the hotel"}.`,
               paymentLinkSent
                 ? `A payment link was JUST texted to the caller's phone. Tell them: "You've just received an SMS with a secure payment link — the room is reserved for you for the next 30 minutes to complete the payment, and paying confirms the booking." Card details go only to the payment page, never over the phone. They'll get a confirmation text once paid.`
                 : `Hold expires at ${expires} local time (30 minutes).`,

@@ -67,6 +67,6 @@ export function prettyDate(isoDate: string): string {
   }).format(new Date(`${isoDate}T12:00:00Z`));
 }
 
-export function eur(cents: number): string {
-  return `${(cents / 100).toFixed(cents % 100 === 0 ? 0 : 2)} EUR`;
+export function usd(cents: number): string {
+  return `$${(cents / 100).toFixed(cents % 100 === 0 ? 0 : 2)}`;
 }
